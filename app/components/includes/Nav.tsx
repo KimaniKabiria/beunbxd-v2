@@ -162,10 +162,10 @@ export default function Nav() {
             </MenuHandler>
             <MenuList>
               <MenuItem>
-                <Button className="group inline-flex rounded-md items-center w-full text-base text-taran-blue hover:text-taran-orange">
-                    <LockOpenIcon className="flex mr-2 h-6 w-6" aria-hidden="true" />
-                    <p className="flex lg:block my-2 font-medium">Who we have unbxd.</p>                        
-                </Button>
+                <div className="group inline-flex rounded-md items-center w-full text-base text-taran-blue hover:text-taran-orange">
+                  <LockOpenIcon className="flex mr-2 h-6 w-6" aria-hidden="true" />
+                  <p className="flex lg:block my-2 font-medium">Who we have unbxd.</p>                        
+                </div>
               </MenuItem>
               <MenuItem>
                 <div className="group inline-flex rounded-md items-center w-full text-base text-taran-blue hover:text-taran-orange">
@@ -173,7 +173,16 @@ export default function Nav() {
                   <p className="flex lg:block my-2 font-medium">FAQs.</p>                        
                 </div>
               </MenuItem>
-              <MenuItem>Menu Item 3</MenuItem>
+              <MenuItem className="rounded-b-lg bg-gradient-to-r from-taran-blue to-taran-orange">
+                <div className="text-white">
+                    <a href="https://clienthub.beunbxd.com/getunbxd">
+                    <div className="group flex rounded-md items-center w-full text-base ">
+                        <BriefcaseIcon className="flex mr-2 h-6 w-6" aria-hidden="true" />
+                        <p className="flex lg:block my-2 font-bold">Get a Quote.</p>                        
+                    </div>   
+                    </a>      
+                </div>
+              </MenuItem>
             </MenuList>
           </Menu>
         </div>
