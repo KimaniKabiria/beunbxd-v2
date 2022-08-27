@@ -1,0 +1,154 @@
+import { useState, useEffect } from "react";
+import {
+  Navbar,
+  MobileNav,
+  Typography,
+  Button,
+  IconButton,
+  Menu,
+  MenuHandler,
+  MenuList,
+  MenuItem,
+} from "@material-tailwind/react";
+import { Link } from "@remix-run/react";
+import { ChevronDownIcon } from "@heroicons/react/24/outline"
+
+import Logo from "../../assets/images/logo-black.png"
+ 
+export default function Nav() {
+  const [openNav, setOpenNav] = useState(false);
+ 
+  useEffect(() => {
+    window.addEventListener(
+      "resize",
+      () => window.innerWidth >= 960 && setOpenNav(false)
+    );
+  }, []);
+ 
+  const navList = (
+    <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+
+      <Typography
+        as="li"
+        variant="lead"
+        color="blue-gray"
+        className="p-1 font-normal text-taran-blue hover:text-taran-orange"
+      >
+        <Link to="/about">Who are We?</Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="lead"
+        color="blue-gray"
+        className="p-1 font-normal text-taran-blue hover:text-taran-orange"
+      >
+        <a href="#" className="flex items-center">
+          Design
+        </a>
+      </Typography>
+      <Typography
+        as="li"
+        variant="lead"
+        color="blue-gray"
+        className="p-1 font-normal text-taran-blue hover:text-taran-orange"
+      >
+        <a href="#" className="flex items-center">
+          Develop
+        </a>
+      </Typography>
+      <Typography
+        as="li"
+        variant="lead"
+        color="blue-gray"
+        className="p-1 font-normal text-taran-blue hover:text-taran-orange"
+      >
+        <a href="#" className="flex items-center">
+          Market
+        </a>
+      </Typography>
+    </ul>
+  );
+ 
+  return (
+    <Navbar className="sticky top-0 z-50 flex flex-wrap items-center justify-between mx-auto py-2 px-4 lg:px-8 lg:py-4 bg-unbxd-bg bg-opacity-75 backdrop-filter backdrop-blur backdrop-saturate-150 shadow-lg rounded-2xl">
+      <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
+        <img
+          className="block h-8 lg:h-12 w-auto"
+          src={Logo}
+          alt="Workflow"
+        />
+        <div className="hidden lg:block">{navList}</div>
+        <div className="hidden lg:block">
+          <Menu>
+            <MenuHandler>
+              <Button variant="gradient" className="flex flex-row px-4 py-2 mt-4 text-sm leading-none bg-gradient-to-r from-taran-orange to-taran-blue  text-white border-2 rounded-xl hover:border-transparent hover:text-white hover:bg-taran-blue lg:mt-0">
+                <ChevronDownIcon className="flex -ml-1 mr-2 h-6 w-6" aria-hidden="true" />
+                <p className="flex lg:block my-2 font-bold">LET&apos;S UNBX</p>
+              </Button>
+            </MenuHandler>
+            <MenuList>
+              <MenuItem>Menu Item 1</MenuItem>
+              <MenuItem>Menu Item 2</MenuItem>
+              <MenuItem>Menu Item 3</MenuItem>
+            </MenuList>
+          </Menu>
+        </div>
+        <IconButton
+          variant="text"
+          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+          ripple={false}
+          onClick={() => setOpenNav(!openNav)}
+        >
+          {openNav ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              className="h-6 w-6"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          )}
+        </IconButton>
+      </div>
+      <MobileNav open={openNav}>
+        {navList}
+        <div className="lg:hidden">
+          <Menu>
+            <MenuHandler>
+              <Button variant="gradient" className="flex flex-row px-4 py-2 mt-4 text-sm leading-none bg-gradient-to-r from-taran-orange to-taran-blue  text-white border-2 rounded-xl hover:border-transparent hover:text-white hover:bg-taran-blue lg:mt-0">
+                <ChevronDownIcon className="flex -ml-1 mr-2 h-6 w-6" aria-hidden="true" />
+                <p className="flex lg:block my-2 font-bold">LET&apos;S UNBX</p>
+              </Button>
+            </MenuHandler>
+            <MenuList>
+              <MenuItem>Menu Item 1</MenuItem>
+              <MenuItem>Menu Item 2</MenuItem>
+              <MenuItem>Menu Item 3</MenuItem>
+            </MenuList>
+          </Menu>
+        </div>
+      </MobileNav>
+    </Navbar>
+  );
+}
