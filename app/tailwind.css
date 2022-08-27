@@ -1075,6 +1075,10 @@ video {
   width: 4rem;
 }
 
+.w-2\/3 {
+  width: 66.666667%;
+}
+
 .min-w-\[25\%\] {
   min-width: 25%;
 }
@@ -1286,6 +1290,10 @@ video {
 
 .place-items-center {
   place-items: center;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
@@ -2083,6 +2091,10 @@ video {
   padding: 5rem;
 }
 
+.p-12 {
+  padding: 3rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -2542,6 +2554,11 @@ video {
 .text-taran-orange {
   --tw-text-opacity: 1;
   color: rgb(204 83 51 / var(--tw-text-opacity));
+}
+
+.underline {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .no-underline {
@@ -5471,8 +5488,18 @@ video {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   }
 
+  .lg\:from-taran-orange {
+    --tw-gradient-from: #cc5333;
+    --tw-gradient-to: rgb(204 83 51 / 0);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+
   .lg\:to-taran-orange {
     --tw-gradient-to: #cc5333;
+  }
+
+  .lg\:to-taran-blue {
+    --tw-gradient-to: #23074d;
   }
 
   .lg\:p-4 {
@@ -5485,6 +5512,14 @@ video {
 
   .lg\:p-20 {
     padding: 5rem;
+  }
+
+  .lg\:p-8 {
+    padding: 2rem;
+  }
+
+  .lg\:p-32 {
+    padding: 8rem;
   }
 
   .lg\:px-8 {
@@ -5626,6 +5661,11 @@ video {
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
 
