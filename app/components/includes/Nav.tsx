@@ -11,7 +11,7 @@ import {
   MenuItem,
 } from "@material-tailwind/react";
 import { Link } from "@remix-run/react";
-import { ChevronDownIcon } from "@heroicons/react/24/outline"
+import { LockOpenIcon, ChevronDownIcon, BriefcaseIcon, InformationCircleIcon } from "@heroicons/react/24/outline"
 
 import Logo from "../../assets/images/logo-black.png"
  
@@ -42,9 +42,7 @@ export default function Nav() {
         color="blue-gray"
         className="p-1 font-normal text-taran-blue hover:text-taran-orange"
       >
-        <a href="#" className="flex items-center">
-          Design
-        </a>
+        <Link to="/design">Design</Link>
       </Typography>
       <Typography
         as="li"
@@ -70,13 +68,15 @@ export default function Nav() {
   );
  
   return (
-    <Navbar className="sticky top-0 z-50 flex flex-wrap items-center justify-between mx-auto py-2 px-4 lg:px-8 lg:py-4 bg-unbxd-bg bg-opacity-75 backdrop-filter backdrop-blur backdrop-saturate-150 shadow-lg rounded-2xl">
+    <Navbar className="sticky top-0 z-50 flex flex-wrap max-w-full items-center justify-between mx-auto py-2 px-4 lg:px-8 lg:py-4 bg-unbxd-bg bg-opacity-75 backdrop-filter backdrop-blur backdrop-saturate-150 shadow-lg rounded-2xl">
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
-        <img
-          className="block h-8 lg:h-12 w-auto"
-          src={Logo}
-          alt="Workflow"
-        />
+        <Link to="/">
+          <img
+            className="block h-8 lg:h-12 w-auto"
+            src={Logo}
+            alt="Workflow"
+          />
+        </Link>
         <div className="hidden lg:block">{navList}</div>
         <div className="hidden lg:block">
           <Menu>
@@ -87,9 +87,28 @@ export default function Nav() {
               </Button>
             </MenuHandler>
             <MenuList>
-              <MenuItem>Menu Item 1</MenuItem>
-              <MenuItem>Menu Item 2</MenuItem>
-              <MenuItem>Menu Item 3</MenuItem>
+              <MenuItem>
+                <div className="group inline-flex rounded-md items-center w-full text-base text-taran-blue hover:text-taran-orange">
+                  <LockOpenIcon className="flex mr-2 h-6 w-6" aria-hidden="true" />
+                  <p className="flex lg:block my-2 font-medium">Who we have unbxd.</p>                        
+                </div>
+              </MenuItem>
+              <MenuItem>
+                <div className="group inline-flex rounded-md items-center w-full text-base text-taran-blue hover:text-taran-orange">
+                  <InformationCircleIcon className="flex mr-2 h-6 w-6" aria-hidden="true" />
+                  <p className="flex lg:block my-2 font-medium">FAQs.</p>                        
+                </div>
+              </MenuItem>
+              <MenuItem className="rounded-b-lg bg-gradient-to-r from-taran-blue to-taran-orange">
+                <div className="text-white">
+                    <a href="https://clienthub.beunbxd.com/getunbxd">
+                    <div className="group flex rounded-md items-center w-full text-base ">
+                        <BriefcaseIcon className="flex mr-2 h-6 w-6" aria-hidden="true" />
+                        <p className="flex lg:block my-2 font-bold">Get a Quote.</p>                        
+                    </div>   
+                    </a>      
+                </div>
+              </MenuItem>
             </MenuList>
           </Menu>
         </div>
@@ -142,8 +161,18 @@ export default function Nav() {
               </Button>
             </MenuHandler>
             <MenuList>
-              <MenuItem>Menu Item 1</MenuItem>
-              <MenuItem>Menu Item 2</MenuItem>
+              <MenuItem>
+                <Button className="group inline-flex rounded-md items-center w-full text-base text-taran-blue hover:text-taran-orange">
+                    <LockOpenIcon className="flex mr-2 h-6 w-6" aria-hidden="true" />
+                    <p className="flex lg:block my-2 font-medium">Who we have unbxd.</p>                        
+                </Button>
+              </MenuItem>
+              <MenuItem>
+                <div className="group inline-flex rounded-md items-center w-full text-base text-taran-blue hover:text-taran-orange">
+                  <InformationCircleIcon className="flex mr-2 h-6 w-6" aria-hidden="true" />
+                  <p className="flex lg:block my-2 font-medium">FAQs.</p>                        
+                </div>
+              </MenuItem>
               <MenuItem>Menu Item 3</MenuItem>
             </MenuList>
           </Menu>

@@ -11,6 +11,7 @@ import styles from "./tailwind.css";
 
 import Nav from "./components/includes/Nav";
 import Footer from "./components/includes/Footer";
+import Icon from "./assets/images/icon.png"
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
@@ -20,6 +21,11 @@ export const meta: MetaFunction = () => ({
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: styles },
+  {
+    rel: 'icon',
+    href: Icon,
+    type: 'image/png',
+  },
 ];
 
 export default function App() {
