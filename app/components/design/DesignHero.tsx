@@ -13,10 +13,10 @@ export default function DesignHero (){
     }, []);
 
     return (
-        <section className="w-full">
+        <section className="flex flex-col mx-auto px-6 lg:px-20 justify-center items-center lg:bg-gradient-to-r lg:from-taran-orange lg:to-taran-blue bg-gradient-to-b from-taran-blue to-taran-orange">
             <div className="flex flex-col mx-auto px-6 lg:px-12 lg:py-8 lg:flex mb-12">
                 <div className="flex flex-col">
-                    <div className="flex flex-col lg:flex-row lg:bg-gradient-to-r lg:from-taran-orange lg:to-taran-blue bg-gradient-to-b from-taran-blue to-taran-orange text-unbxd-bg rounded-2xl">
+                    <div className="flex flex-col lg:flex-row  text-unbxd-bg rounded-2xl">
                         <div className="block mx-auto lg:order-last lg:-ml-0 p-12">
                             <div id="design-lottie"  style={{ height: 560 }}/>
                         </div>

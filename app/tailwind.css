@@ -5458,6 +5458,14 @@ video {
     width: 58.333333%;
   }
 
+  .lg\:w-1 {
+    width: 0.25rem;
+  }
+
+  .lg\:w-11 {
+    width: 2.75rem;
+  }
+
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
