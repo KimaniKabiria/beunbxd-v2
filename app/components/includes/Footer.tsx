@@ -1,15 +1,55 @@
+import React from "react"
 import { Button } from "@material-tailwind/react";
+import { RainbowHighlight } from './RainbowHighlight';
+import lottie from "lottie-web"
 
 import logo from "../../assets/images/logo.png"
 import { LockOpenIcon } from '@heroicons/react/24/outline'
 import { FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa'
 
+import Chat from "../../assets/lotties/chat.json"
+import Call from "../../assets/lotties/icons/call.json"
+
 export default function Footer(){
+    React.useEffect(() => {
+      lottie.loadAnimation({
+        container: document.querySelector("#chat"),
+        animationData: Chat
+      });
+      lottie.loadAnimation({
+        container: document.querySelector("#call"),
+        animationData: Call
+      });
+    }, []);
+
+    const colors = ["#009193", "#cc5333", "#cc5333", "#3B82F6"];
   
     return(
         
-        <footer className="">
-            <div className="lg:flex lg:flex-row px-4 lg:px-0">
+        <footer className="flex flex-col mx-auto items-center justify-center bg-gradient-to-r from-taran-blue to-taran-orange mt-12 lg:mt-32 pt-12">
+        <div className='flex flex-col w-5/6 p-8 lg:p-12 lg:mx-20 items-center justify-center text-center bg-white/10 rounded-2xl backdrop-blur-lg'>
+          <div className='flex lg:flex-row flex-col p-4 lg:p-8 items-center'>
+            <div className='flex flex-col text-left text-white'>
+              <h1 className='lg:text-5xl text-2xl font-semibold'>
+                      <RainbowHighlight color={colors[2]}>Where do we start?
+                      </RainbowHighlight>
+              </h1>
+              <p className='text-base lg:p-4'>Schedule a call so We can learn about your product and we can discuss the best way to help you be UNBXD.</p>
+            <a href="https://clienthub.beunbxd.com/discovery">
+                <Button className="inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-lg shadow-sm text-lg lg:text-xl font-medium text-white bg-taran-blue border-taran-blue hover:text-white hover:bg-taran-orange focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-taran-orange" ripple={true}>
+                    <div id="call" className="w-12 h-12 pr-2"/>
+                    <p className="flex">SCHEDULE A DISCOVERY CALL</p>
+                </Button>
+            </a>
+            </div>
+            <div className='flex lg:pt-0 pt-4'>
+              <div className="flex">
+                <div id="chat"/>
+              </div>
+            </div>
+          </div>
+        </div>
+            {/* <div className="lg:flex lg:flex-row px-4 lg:px-0 lg:-mt-12">
                 <div className="lg:w-1/4"></div>
                 <div className="flex flex-col lg:flex-row lg:w-11/12 bg-unbxd-bg p-8 lg:px-8 lg:py-12 justify-center items-center text-center border border-gray-300 rounded-xl">                
                     <div className="flex flex-col lg:w-2/3 lg:px-16">
@@ -26,8 +66,8 @@ export default function Footer(){
                     </a>
                 </div>
                 <div className="lg:w-1/4"></div>
-            </div>
-            <div className="flex flex-col items-center justify-center px-6 lg:px-20 pt-8 lg:pt-40 lg:-mt-24 bg-gradient-to-r from-taran-blue to-taran-orange text-white">
+            </div> */}
+            <div className="flex flex-col items-center justify-center px-6 lg:px-20 pt-8 lg:pt-40 lg:-mt-24  text-white">
                 <div className="flex items-center flex-shrink-0 text-white">
                     <span className="text-xl font-semibold">
                     <a href="/">

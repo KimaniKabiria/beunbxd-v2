@@ -8,6 +8,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import styles from "./tailwind.css";
+import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 
 import Nav from "./components/includes/Nav";
 import Footer from "./components/includes/Footer";
@@ -36,12 +37,14 @@ export default function App() {
         <Links />
       </head>
       <body className="bg-unbxd-bg w-full">
-        <Nav/>
-        <Outlet />
-        <ScrollRestoration />
-        <Scripts />
-        <LiveReload />
-        <Footer />
+        <RoughNotationGroup show={true}>
+          <Nav/>
+          <Outlet />
+          <ScrollRestoration />
+          <Scripts />
+          <LiveReload />
+          <Footer />
+        </RoughNotationGroup>
       </body>
     </html>
   );
