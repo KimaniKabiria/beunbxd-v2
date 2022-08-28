@@ -53,7 +53,7 @@ export default function ProductFeatures(){
                         </div>
                         <div>
                             <h5 className="text-2xl font-bold py-2 tracking-tight text-gray-900 dark:text-gray-300">Business Strategy</h5>
-                            <p className="mb-3 text-sm font-normal text-gray-700 dark:text-white">We discuss what you are trying to achieve, and place goals on your website planning how to achieve that.</p>
+                            <p className="mb-3 text-sm font-normal text-gray-700 dark:text-white">We discuss what you are trying to achieve, and place goals on your product planning on how to achieve that.</p>
                         </div>
                     </div>
                 </RoughNotation>

@@ -40,7 +40,7 @@ export default function HireUs() {
                             <div id="growth"/>
                         </div>
                         <p className="mt-4 lg:text-lg text-base text-center xl:text-left lg:text-left leading-relaxed">
-                        When a you is outgrow your market and need to scale.
+                        When you outgrow your market and need to scale.
                         </p>
                     </div>
                     <div className="flex flex-col justify-center items-center lg:w-1/3 lg:px-12 mt-16 lg:mt-0">
@@ -54,7 +54,7 @@ export default function HireUs() {
                     </div>
                     <div className="flex flex-col lg:flex-row mx-auto lg:px-20 text-taran-orange mt-8 lg:mt-12 mb-12">
                         <p className="mt-4 lg:text-xl text-base font-bold text-center xl:text-left lg:text-left leading-relaxed font-base">
-                    We help you remold your online presence and make you stand out from your competition. 
+                    We help you create or remold your online presence and make you stand out from your competition. 
                     To do that, we rely on aesthetic design, hardcore development, and unstoppable work ethic. 
                     We have the best talent we can find across the country who are masters at their skill.
                     </p>

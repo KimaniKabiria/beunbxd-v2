@@ -45,7 +45,7 @@ export default function OurApproach () {
                 <div className="flex flex-col lg:flex-row mx-auto text-black mt-4 mb-12">
                 <p className="lg:text-xl text-base text-center xl:text-left lg:text-left leading-relaxed font-base">
                 We have perfected our project process so that we can produce exceptional results every time.
-                We achieve this by seeking to understand what makes you, your users and industry as a whole tick.
+                We achieve this by seeking to understand what makes you, your users and industry as a whole, tick.
                 By understanding intimately what you and your users are trying to achieve we can deliver digital solutions that get results.
                 </p>
                 </div>
@@ -94,7 +94,7 @@ export default function OurApproach () {
                         4. Market
                         </p>
                         <p className="text-base text-center leading-relaxed">
-                        Our experienced digital designers work with you to co-design applications that resonate with your customers and communicate your businesses messages.
+                        Our experienced digital marketers work with you to co-create marketting campaigns to grow and reach the right audience for your product.
                         </p>
                 </div>
                 <div className="flex flex-col justify-center items-center lg:w-full lg:px-2 mt-8">
