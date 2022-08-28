@@ -2,7 +2,6 @@ import React from "react";
 import Typewriter from 'typewriter-effect'
 import lottie from "lottie-web";
 
-import designHero from "../../assets/images/super-woman.svg"
 import Design from "../../assets/lotties/design.json"
 
 export default function DesignHero (){
