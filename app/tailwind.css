@@ -839,20 +839,12 @@ video {
   margin-left: auto;
 }
 
-.mt-16 {
-  margin-top: 4rem;
-}
-
 .mb-20 {
   margin-bottom: 5rem;
 }
 
-.-mt-12 {
-  margin-top: -3rem;
-}
-
-.-mt-16 {
-  margin-top: -4rem;
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .block {
@@ -1071,12 +1063,16 @@ video {
   width: 4rem;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .w-6\/12 {
   width: 50%;
 }
 
-.w-5\/12 {
-  width: 41.666667%;
+.w-2\/3 {
+  width: 66.666667%;
 }
 
 .min-w-\[25\%\] {
@@ -1157,10 +1153,6 @@ video {
 
 .flex-auto {
   flex: 1 1 auto;
-}
-
-.flex-1 {
-  flex: 1 1 0%;
 }
 
 .flex-shrink-0 {
@@ -4038,11 +4030,6 @@ video {
   background-color: rgb(35 7 77 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-unbxd-bg:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 246 245 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-opacity-20:hover {
   --tw-bg-opacity: 0.2;
 }
@@ -5354,16 +5341,16 @@ video {
     margin-bottom: 1rem;
   }
 
+  .lg\:-mt-24 {
+    margin-top: -6rem;
+  }
+
   .lg\:mt-8 {
     margin-top: 2rem;
   }
 
   .lg\:-ml-0 {
     margin-left: -0px;
-  }
-
-  .lg\:-mt-24 {
-    margin-top: -6rem;
   }
 
   .lg\:mb-0 {
@@ -5430,6 +5417,14 @@ video {
     height: 4rem;
   }
 
+  .lg\:w-11\/12 {
+    width: 91.666667%;
+  }
+
+  .lg\:w-2\/3 {
+    width: 66.666667%;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -5442,28 +5437,8 @@ video {
     width: 25%;
   }
 
-  .lg\:w-2\/3 {
-    width: 66.666667%;
-  }
-
   .lg\:w-1\/3 {
     width: 33.333333%;
-  }
-
-  .lg\:w-11\/12 {
-    width: 91.666667%;
-  }
-
-  .lg\:w-7\/12 {
-    width: 58.333333%;
-  }
-
-  .lg\:w-1 {
-    width: 0.25rem;
-  }
-
-  .lg\:w-11 {
-    width: 2.75rem;
   }
 
   .lg\:grid-cols-4 {
@@ -5534,11 +5509,6 @@ video {
     padding: 8rem;
   }
 
-  .lg\:px-12 {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
   .lg\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -5554,14 +5524,9 @@ video {
     padding-bottom: 3rem;
   }
 
-  .lg\:px-28 {
-    padding-left: 7rem;
-    padding-right: 7rem;
-  }
-
-  .lg\:py-20 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+  .lg\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .lg\:py-8 {
@@ -5589,19 +5554,14 @@ video {
     padding-right: 9rem;
   }
 
-  .lg\:px-2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-
   .lg\:py-32 {
     padding-top: 8rem;
     padding-bottom: 8rem;
   }
 
-  .lg\:px-32 {
-    padding-left: 8rem;
-    padding-right: 8rem;
+  .lg\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   .lg\:py-48 {
@@ -5609,17 +5569,23 @@ video {
     padding-bottom: 12rem;
   }
 
-  .lg\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+  .lg\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .lg\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .lg\:px-28 {
+    padding-left: 7rem;
+    padding-right: 7rem;
   }
 
   .lg\:pb-20 {
     padding-bottom: 5rem;
-  }
-
-  .lg\:pb-32 {
-    padding-bottom: 8rem;
   }
 
   .lg\:pl-12 {

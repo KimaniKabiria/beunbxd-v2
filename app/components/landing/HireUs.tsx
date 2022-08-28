@@ -1,10 +1,25 @@
-import { motion } from "framer-motion"
+import React from "react"
+import lottie from "lottie-web";
 
-import company from "../../assets/images/company.svg"
-import circleChart from "../../assets/images/circle_chart.svg"
-import startup from "../../assets/images/startup_prototype.svg"
+import Internet from "../../assets/lotties/internet.json"
+import Growth from "../../assets/lotties/growth.json"
+import Splash from "../../assets/lotties/splash.json"
 
 export default function HireUs() {
+    React.useEffect(() => {
+      lottie.loadAnimation({
+        container: document.querySelector("#internet"),
+        animationData: Internet
+      });
+      lottie.loadAnimation({
+        container: document.querySelector("#growth"),
+        animationData: Growth
+      });
+      lottie.loadAnimation({
+        container: document.querySelector("#splash"),
+        animationData: Splash
+      });
+    }, []);
     return (
     <section className="flex items-center mx-auto lg:w-11/12 lg:-mt-12">
             <div className="flex flex-col mx-auto px-8 lg:px-32 bg-taran-blue rounded-2xl text-white py-8 lg:py-20">
@@ -12,68 +27,29 @@ export default function HireUs() {
                     When To Hire Us.
                     </h1>
                     <div className="flex flex-col lg:flex-row mx-auto lg:px-8 pt-4 lg:pt-12">
-                        <div className="flex-1 lg:w-1/3 lg:px-12 mt-4 lg:mt-0">
-                            <motion.div 
-                                whileHover={{ 
-                                scale: 1.15, 
-                                zIndex: 30, 
-                                }} 
-                                transition={{
-                                    ease: 'easeOut',
-                                    duration: 0.35,
-                                }}
-                            > 
-                                <img
-                                    alt="Company"
-                                    className="block w-6/12 lg:w-11/12 mx-auto mb-8"
-                                    src={company}
-                                />
-                                <p className="mt-4 lg:text-lg text-base text-center lg:text-left leading-relaxed">
-                                When a you want to stand up to the modern internet culture.
-                                </p>
-                            </motion.div >
+                        <div className="flex flex-col justify-center items-center lg:w-1/3 lg:px-12 mt-4 lg:mt-0">
+                            <div className="w-1/2">
+                                <div id="internet"/>
+                            </div>
+                            <p className="mt-4 lg:text-lg text-base text-center lg:text-left leading-relaxed">
+                            When a you want to stand up to the modern internet culture.
+                            </p>
                         </div>
-                    <div className="flex-1 lg:w-1/3 lg:px-12 mt-16 lg:mt-0">
-                        <motion.div 
-                            whileHover={{ 
-                            scale: 1.15, 
-                            zIndex: 30, 
-                            }} 
-                            transition={{
-                                ease: 'easeOut',
-                                duration: 0.35,
-                            }}
-                        > 
-                            <img
-                                alt="Circle Chart"
-                                className="block w-6/12 lg:w-11/12 mx-auto mb-8"
-                                src={circleChart}
-                            />
-                            <p className="mt-4 lg:text-lg text-base text-center xl:text-left lg:text-left leading-relaxed">
-                            When a you is outgrow your market and need to scale.
-                            </p>
-                        </motion.div >
+                    <div className="flex flex-col justify-center items-center lg:w-1/3 lg:px-12 mt-16 lg:mt-0">
+                        <div className="w-2/3">
+                            <div id="growth"/>
+                        </div>
+                        <p className="mt-4 lg:text-lg text-base text-center xl:text-left lg:text-left leading-relaxed">
+                        When a you is outgrow your market and need to scale.
+                        </p>
                     </div>
-                    <div className="flex-1 lg:w-1/3 lg:px-12 mt-16 lg:mt-0">
-                        <motion.div 
-                            whileHover={{ 
-                            scale: 1.15, 
-                            zIndex: 30, 
-                            }} 
-                            transition={{
-                                ease: 'easeOut',
-                                duration: 0.35,
-                            }}
-                        > 
-                            <img
-                                alt="Startup Prototype"
-                                className="block w-5/12 lg:w-7/12 mx-auto mb-8"
-                                src={startup}
-                            />
-                            <p className="mt-4 lg:text-lg text-base text-center xl:text-left lg:text-left leading-relaxed">
-                            When a you need to make a splash.
-                            </p>
-                        </motion.div >
+                    <div className="flex flex-col justify-center items-center lg:w-1/3 lg:px-12 mt-16 lg:mt-0">
+                        <div className="">
+                            <div id="splash"/>
+                        </div>
+                        <p className="mt-4 lg:text-lg text-base text-center xl:text-left lg:text-left leading-relaxed">
+                        When a you need to make a splash.
+                        </p>
                     </div>
                     </div>
                     <div className="flex flex-col lg:flex-row mx-auto lg:px-20 text-taran-orange mt-8 lg:mt-12 mb-12">
