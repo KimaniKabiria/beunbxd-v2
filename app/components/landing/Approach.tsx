@@ -8,8 +8,8 @@ import support from "../../assets/images/support.png"
 
 export default function OurApproach () {
     return (
-    <section className="flex lg:w-11/12 mx-auto bg-unbxd-bg bg-opacity-70">
-        <div className="flex flex-col mx-auto px-8 lg:px-36 py-2 lg:py-32">
+    <section className="flex lg:w-11/12 mx-auto bg-unbxd-bg bg-opacity-70 mb-20">
+        <div className="flex flex-col mx-auto px-8 lg:px-36 py-8 lg:py-32">
                 <h1 className="inline-block text-taran-orange p-3 lg:text-3xl text-3xl font-bold mb-4 border-b-2 border-taran-blue">
                 Our Unbxing Approach.
                 </h1>

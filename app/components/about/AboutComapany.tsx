@@ -1,17 +1,23 @@
+import React from "react"
+import lottie from "lottie-web"
 import startup from "../../assets/images/startup.png"
 
+import Team from "../../assets/lotties/team.json"
+
 export default function AboutCompany() {
+    React.useEffect(() => {
+      lottie.loadAnimation({
+        container: document.querySelector("#team"),
+        animationData: Team
+      });
+    }, []);
 return (
-  <section className="flex px-4 lg:px-12">
-        <div className="flex bg-gradient-to-r from-taran-orange to-taran-blue text-white mx-auto items-center justify-center mt-4 mb-16 py-6 lg:py-0 rounded-2xl">
+  <section className="flex items-center mx-auto lg:w-11/12">
+        <div className="flex bg-gradient-to-r from-taran-orange to-taran-blue text-white mx-auto items-center justify-center mt-4 mb-16 py-6 px-4 lg:py-0 rounded-2xl">
             <div className="flex flex-col lg:flex-row p-4 lg:p-20">
-                <div className="lg:w-1/2 lg:px-12">
+                <div className="lg:w-2/3">
                     <h1 className="flex items-center justify-center">
-                        <img
-                            alt="Designers"
-                            className="block w-full mx-auto"
-                            src={startup}
-                        />
+                        <div id="team"/>
                     </h1>
                 </div>
                 <div className="flex mt-4 lg:mt-0 w-full lg:w-1/2 items-center justify-center lg:px-20 pb-6">

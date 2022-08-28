@@ -2,8 +2,8 @@ import { BsCheck2Circle } from "react-icons/bs"
 
 export default function WhyUs(){
 return (
-    <section className="flex bg-unbxd-bg lg:px-28 px-8 lg:py-20">
-        <div className="flex flex-col">
+    <section className="flex flex-col mx-auto bg-white -mt-20 lg:-mt-24 lg:w-11/12 rounded-2xl">
+        <div className="flex flex-col p-12 lg:p-20">
             <div className="flex p-3">
                 <h1 className="inline-block text-taran-blue p-3 lg:text-4xl text-3xl font-bold mb-2 lg:mb-4 border-b-2 border-taran-orange">
                     Why Us ?

@@ -5,8 +5,8 @@ import { IoIosPeople } from "react-icons/io"
 
 export default function HowWeDo (){
 return (
-    <section className="flex bg-unbxd-bg lg:px-28 px-8 lg:py-20 lg:pb-32">
-        <div className="flex flex-col">
+    <section className="bg-unbxd-bg flex items-center mx-auto lg:w-11/12">
+        <div className="flex flex-col p-12 lg:p-20">
             <div className="flex p-3">
                 <h1 className="inline-block text-taran-orange p-3 lg:text-4xl text-3xl font-bold mb-2 lg:mb-4 border-b-2 border-taran-blue">
                     How we Do it.
