@@ -1,10 +1,6 @@
 import React from "react"
 import lottie from "lottie-web";
 
-import design from "../../assets/images/designers.png"
-import software from "../../assets/images/web-design.png"
-import marketing from "../../assets/images/market.png"
-
 import Develop from "../../assets/lotties/develop.json"
 import UiDesign from "../../assets/lotties/ui-design.json"
 import Marketing from "../../assets/lotties/market.json"
@@ -31,13 +27,7 @@ return(
         <div className="container mx-auto px-12 items-center flex flex-col lg:flex-row mt-4 mb-16">
             <div className="lg:w-1/2 lg:ml-12">
                 <h1 className="flex items-center text-white no-underline">
-
-                <div id="ui-design"  style={{ height: 560 }}/>
-                    {/* <img
-                        alt="Designers"
-                        className="block w-full mx-auto"
-                        src={design}
-                    /> */}
+                    <div id="ui-design"  style={{ height: 560 }}/>
                 </h1>
             </div>
             <div className="mt-4 lg:-mt-8 w-full lg:w-1/2 text-black lg:mr-24">
@@ -61,11 +51,6 @@ return(
             <div className="lg:w-1/2 lg:ml-12 lg:order-last">
                 <h1 className="flex items-center text-white no-underline">
                     <div id="develop"  style={{ height: 560 }}/>
-                    {/* <img
-                        alt="Developers"
-                        className="block w-full mx-auto mb-8"
-                        src={software}
-                    /> */}
                 </h1>
             </div>
             <div className="mt-4 lg:-mt-8 w-full lg:w-1/2 text-black lg:mr-24">
@@ -89,11 +74,6 @@ return(
             <div className="lg:w-1/2 lg:ml-12">
                 <h1 className="flex items-center text-white no-underline">
                     <div id="market"  style={{ height: 560 }}/>
-                    {/* <img
-                        alt="Marketing"
-                        className="block w-full mx-auto mb-8"
-                        src={marketing}
-                    /> */}
                 </h1>
             </div>
             <div className="mt-4 lg:-mt-8 w-full lg:w-1/2 text-black lg:mr-24">
