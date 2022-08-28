@@ -19,6 +19,8 @@
     "@remix-run/vercel": "^1.7.0",
     "@vercel/node": "^2.4.4",
     "framer-motion": "^7.2.1",
+    "lord-icon-element": "^3.4.3",
+    "lottie-web": "^5.9.6",
     "react": "^18.2.0",
     "react-animations": "^1.0.0",
     "react-dom": "^18.2.0",

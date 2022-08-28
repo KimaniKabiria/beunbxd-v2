@@ -1,9 +1,17 @@
-
+import React from "react";
 import Typewriter from 'typewriter-effect'
+import lottie from "lottie-web";
 
 import designHero from "../../assets/images/super-woman.svg"
+import Design from "../../assets/lotties/design.json"
 
 export default function DesignHero (){
+    React.useEffect(() => {
+      lottie.loadAnimation({
+        container: document.querySelector("#design-lottie"),
+        animationData: Design
+      });
+    }, []);
 
     return (
         <section className="w-full">
@@ -11,13 +19,7 @@ export default function DesignHero (){
                 <div className="flex flex-col">
                     <div className="flex flex-col lg:flex-row lg:bg-gradient-to-r lg:from-taran-orange lg:to-taran-blue bg-gradient-to-b from-taran-blue to-taran-orange text-unbxd-bg rounded-2xl">
                         <div className="block mx-auto lg:order-last lg:-ml-0 p-12">
-                            <div className="flex items-end justify-center">
-                                <img
-                                className="block lg:p-8 w-2/3 h-full"
-                                src={designHero}
-                                alt="Unbxd Box"
-                                />
-                            </div>
+                            <div id="design-lottie"  style={{ height: 560 }}/>
                         </div>
                         <div className="flex flex-row justify-center items-center mx-auto lg:w-1/2 px-8 lg:px-12  pb-8 lg:pb-0">
                             <div className="flex flex-col lg:pl-8">
