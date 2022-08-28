@@ -30,25 +30,25 @@ export default function Nav() {
 
       <Typography
         as="li"
-        variant="lead"
+        variant="h6"
         color="blue-gray"
-        className="p-1 font-normal text-taran-blue hover:text-taran-orange"
+        className="p-1 font-bold text-taran-blue hover:text-taran-orange"
       >
         <Link to="/about">Who are We?</Link>
       </Typography>
       <Typography
         as="li"
-        variant="lead"
+        variant="h6"
         color="blue-gray"
-        className="p-1 font-normal text-taran-blue hover:text-taran-orange"
+        className="p-1 font-bold text-taran-blue hover:text-taran-orange"
       >
         <Link to="/design">Design</Link>
       </Typography>
       <Typography
         as="li"
-        variant="lead"
+        variant="h6"
         color="blue-gray"
-        className="p-1 font-normal text-taran-blue hover:text-taran-orange"
+        className="p-1 font-bold text-taran-blue hover:text-taran-orange"
       >
         <a href="#" className="flex items-center">
           Develop
@@ -56,9 +56,9 @@ export default function Nav() {
       </Typography>
       <Typography
         as="li"
-        variant="lead"
+        variant="h6"
         color="blue-gray"
-        className="p-1 font-normal text-taran-blue hover:text-taran-orange"
+        className="p-1 font-bold text-taran-blue hover:text-taran-orange"
       >
         <a href="#" className="flex items-center">
           Market
@@ -68,11 +68,11 @@ export default function Nav() {
   );
  
   return (
-    <Navbar className="sticky top-0 z-50 flex flex-wrap max-w-full items-center justify-between mx-auto py-2 px-4 lg:px-8 lg:py-4 bg-unbxd-bg bg-opacity-75 backdrop-filter backdrop-blur backdrop-saturate-150 shadow-lg rounded-2xl">
+    <Navbar className="sticky top-0 z-50 lg:mt-4 flex flex-wrap items-center justify-between mx-auto py-2 px-4 lg:px-8 bg-unbxd-bg bg-opacity-75 backdrop-filter backdrop-blur backdrop-saturate-150 shadow-lg rounded-2xl">
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
         <Link to="/">
           <img
-            className="block h-8 lg:h-12 w-auto"
+            className="block h-8 w-auto"
             src={Logo}
             alt="Workflow"
           />
@@ -81,7 +81,7 @@ export default function Nav() {
         <div className="hidden lg:block">
           <Menu>
             <MenuHandler>
-              <Button variant="gradient" className="flex flex-row px-4 py-2 mt-4 text-sm leading-none bg-gradient-to-r from-taran-orange to-taran-blue  text-white border-2 rounded-xl hover:border-transparent hover:text-white hover:bg-taran-blue lg:mt-0">
+              <Button variant="gradient" className="flex flex-row px-4 py-1 mt-4 text-sm leading-none bg-gradient-to-r from-taran-orange to-taran-blue  text-white border-2 rounded-xl hover:border-transparent hover:text-white hover:bg-taran-blue lg:mt-0">
                 <ChevronDownIcon className="flex -ml-1 mr-2 h-6 w-6" aria-hidden="true" />
                 <p className="flex lg:block my-2 font-bold">LET&apos;S UNBX</p>
               </Button>
@@ -155,7 +155,7 @@ export default function Nav() {
         <div className="lg:hidden">
           <Menu>
             <MenuHandler>
-              <Button variant="gradient" className="flex flex-row px-4 py-2 mt-4 text-sm leading-none bg-gradient-to-r from-taran-orange to-taran-blue  text-white border-2 rounded-xl hover:border-transparent hover:text-white hover:bg-taran-blue lg:mt-0">
+              <Button variant="gradient" className="flex flex-row px-4 py-1 mt-4 text-sm leading-none bg-gradient-to-r from-taran-orange to-taran-blue  text-white border-2 rounded-xl hover:border-transparent hover:text-white hover:bg-taran-blue lg:mt-0">
                 <ChevronDownIcon className="flex -ml-1 mr-2 h-6 w-6" aria-hidden="true" />
                 <p className="flex lg:block my-2 font-bold">LET&apos;S UNBX</p>
               </Button>

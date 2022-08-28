@@ -5,11 +5,13 @@ import OurApproach from "~/components/landing/Approach";
 
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }} className="w-full">
+    <div style={{ fontFamily: "system-ui, sans-serif" }} className="w-full -mt-20">
       <Hero />
-      <Services />
-      <HireUs />
-      <OurApproach />
+      <div className="flex flex-col justify-center items center">
+        <Services />
+        <HireUs />
+        <OurApproach />
+      </div>
     </div>
   );
 }

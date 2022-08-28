@@ -22,12 +22,13 @@ export default function Services() {
       });
     }, []);
 return(
-  <section className="py-20 bg-unbxd-bg">
+  <section className="flex flex-col mx-auto bg-white lg:-mt-24 lg:w-11/12 rounded-2xl">
+    <div className="lg:py-20">
     {/* UI / UX Design */}
-        <div className="container mx-auto px-12 items-center flex flex-col lg:flex-row mt-4 mb-16">
+        <div className="container mx-auto px-12 items-center flex flex-col lg:flex-row mt-4 mb-8">
             <div className="lg:w-1/2 lg:ml-12">
                 <h1 className="flex items-center text-white no-underline">
-                    <div id="ui-design"  style={{ height: 560 }}/>
+                    <div id="ui-design"/>
                 </h1>
             </div>
             <div className="mt-4 lg:-mt-8 w-full lg:w-1/2 text-black lg:mr-24">
@@ -47,10 +48,10 @@ return(
         </div>
 
     {/* Website & App Development */}
-        <div className="container mx-auto px-12 items-center flex flex-col lg:flex-row mt-4 mb-24">
+        <div className="container mx-auto px-12 items-center flex flex-col lg:flex-row mt-4 mb-8 lg:mb-20">
             <div className="lg:w-1/2 lg:ml-12 lg:order-last">
                 <h1 className="flex items-center text-white no-underline">
-                    <div id="develop"  style={{ height: 560 }}/>
+                    <div id="develop"/>
                 </h1>
             </div>
             <div className="mt-4 lg:-mt-8 w-full lg:w-1/2 text-black lg:mr-24">
@@ -70,10 +71,10 @@ return(
         </div>
     
     {/* Digital Marketing */}
-        <div className="container mx-auto px-12 items-center flex flex-col lg:flex-row lg:mt-8 mt-4 mb-12">
+        <div className="container mx-auto px-12 items-center flex flex-col lg:flex-row lg:mt-12 mt-4 mb-12 lg:mb-32">
             <div className="lg:w-1/2 lg:ml-12">
                 <h1 className="flex items-center text-white no-underline">
-                    <div id="market"  style={{ height: 560 }}/>
+                    <div id="market"/>
                 </h1>
             </div>
             <div className="mt-4 lg:-mt-8 w-full lg:w-1/2 text-black lg:mr-24">
@@ -91,5 +92,6 @@ return(
                 </div>
             </div>
         </div>
+    </div>
 </section>
 )};

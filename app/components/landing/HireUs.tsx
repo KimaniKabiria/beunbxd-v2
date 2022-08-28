@@ -6,8 +6,8 @@ import startup from "../../assets/images/startup_prototype.svg"
 
 export default function HireUs() {
     return (
-    <section className="flex items-center py-2 lg:py-16 lg:px-12 xl:px-24 px-4">
-            <div className="flex flex-col mx-auto px-8 lg:px-20 bg-taran-blue rounded-2xl text-white py-8 lg:py-12">
+    <section className="flex items-center mx-auto lg:w-11/12 lg:-mt-12">
+            <div className="flex flex-col mx-auto px-8 lg:px-32 bg-taran-blue rounded-2xl text-white py-8 lg:py-20">
                     <h1 className="inline-block p-3 lg:text-3xl text-3xl font-bold mb-4 lg:mb-8 border-b-2 border-taran-orange">
                     When To Hire Us.
                     </h1>

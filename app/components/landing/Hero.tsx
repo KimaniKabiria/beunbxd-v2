@@ -16,8 +16,8 @@ export default function Hero(){
     }, []);
 
     return (
-            <div className="flex flex-col mx-auto px-6 py-4 lg:px-12 lg:py-8 mb-12 justify-center items-center">
-                <div className="flex flex-col w-full lg:py-20 lg:flex-row lg:bg-gradient-to-r lg:from-taran-blue lg:to-taran-orange bg-gradient-to-b from-taran-orange to-taran-blue text-unbxd-bg rounded-2xl">
+            <div className="flex flex-col mx-auto px-6 lg:px-20 justify-center items-center lg:bg-gradient-to-r lg:from-taran-blue lg:to-taran-orange bg-gradient-to-b from-taran-orange to-taran-blue">
+                <div className="flex flex-col w-full lg:py-48 lg:flex-row text-unbxd-bg rounded-2xl">
                     <div className="flex mx-auto lg:order-last lg:-ml-0">
                         <div id="unbx"  style={{ height: 520 }}/>
                     </div>
