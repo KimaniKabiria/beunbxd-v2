@@ -33,7 +33,7 @@ return(
             </div>
             <div className="mt-4 lg:-mt-8 w-full lg:w-2/3 text-black xl:mr-24">
                 <div className="">
-                    <div className="xl:p-12 lg:p-8 p-6 bg-white rounded-2xl shadow-xl hover:shadow-2xl">
+                    <div className="xl:p-12 lg:p-8 p-6 bg-white rounded-2xl shadow-2xl hover:shadow-xl">
                         <h3 className="leading-relaxed text-2xl lg:text-3xl xl:text-4xl font-bold text-center text-taran-orange lg:text-left mt-4">
                             UI / UX
                             &nbsp;
@@ -58,7 +58,7 @@ return(
             </div>
             <div className="mt-4 lg:-mt-8 lg:mb-12 w-full lg:w-2/3 text-black xl:mr-24">
                 <div className="">
-                    <div className="xl:p-12 lg:p-8 p-6 bg-white rounded-2xl shadow-xl hover:shadow-2xl">
+                    <div className="xl:p-12 lg:p-8 p-6 bg-white rounded-2xl shadow-2xl hover:shadow-xl">
                         <h3 className="leading-relaxed text-2xl lg:text-3xl xl:text-4xl font-bold text-center text-taran-orange lg:text-left mt-4">
                             Web & App
                             &nbsp;
@@ -83,7 +83,7 @@ return(
             </div>
             <div className="mt-4 lg:-mt-8 w-full lg:w-2/3 text-black xl:mr-24">
                 <div className="">
-                    <div className="xl:p-12 lg:p-8 p-6 bg-white rounded-2xl shadow-xl hover:shadow-2xl">
+                    <div className="xl:p-12 lg:p-8 p-6 bg-white rounded-2xl shadow-2xl hover:shadow-xl">
                         <h3 className="leading-relaxed text-2xl lg:text-3xl xl:text-4xl font-bold text-center text-taran-orange lg:text-left mt-4">
                             Digital
                             &nbsp;

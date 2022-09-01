@@ -9,7 +9,7 @@ import { RoughNotation } from 'react-rough-notation';
 
 export default function ProductFeatures(){
     return(
-        <div className="flex flex-col lg:w-11/12 mx-auto items-center justify-center py-12 rounded-2xl backdrop-blur-lg bg-taran-orange bg-opacity-10 transition border border-gray-800 border-opacity-10 border-b-0 last:border-b hover:border-b hovered-sibling:border-t-0 lg:py-32">
+        <div className="flex flex-col lg:w-11/12 mx-auto items-center justify-center py-12 rounded-2xl shadow-2xl backdrop-blur-lg bg-taran-orange bg-opacity-10 transition border border-gray-800 border-opacity-10 border-b-0 last:border-b hover:border-b hovered-sibling:border-t-0 lg:py-32">
             <div className="w-full h-24 py-4 px-4 text-center">
                 <h1 className="font-bold text-taran-blue text-2xl lg:text-5xl">
                     <Typewriter			
@@ -27,7 +27,7 @@ export default function ProductFeatures(){
                     />
                 </h1>
             </div>
-            <div className="w-full lg:grid grid-cols-3 gap-5 py-12 px-12 lg:px-20">
+            <div className="w-full lg:grid grid-cols-2 xl:grid-cols-3 gap-5 py-12 px-12 lg:px-20">
                 <RoughNotation
                     type='box'
                     padding={0}

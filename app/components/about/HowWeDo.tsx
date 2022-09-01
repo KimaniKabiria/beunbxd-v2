@@ -20,7 +20,7 @@ return (
                 </div>
                 <div className="lg:w-1/3"></div>
             </div>
-            <div className="flex flex-col lg:px-20">
+            <div className="flex flex-col xl:px-20">
                 <div className="p-4">
                     <h2 className="text-xl">
                         Our Passionate Team. A well defined process.
@@ -32,19 +32,19 @@ return (
                     <div className="grid grid-cols-2 lg:grid-cols-4 w-full justify-center items-center text-center">
                         <div className="flex flex-col justify-center items-center text-center p-4">
                             <GiFastArrow className="text-taran-blue w-16 h-16" />
-                            <p className="text-taran-orange text-lg font-semibold mt-2">Fast Prototyping</p>
+                            <p className="text-taran-orange font-semibold mt-2">Fast Prototyping</p>
                         </div>
                         <div className="flex flex-col justify-center items-center text-center p-4">
                             <MdDesignServices className="text-taran-blue w-16 h-16" />
-                            <p className="text-taran-orange text-lg font-semibold mt-2">User Centric Design Philosophy</p>
+                            <p className="text-taran-orange font-semibold mt-2">User Centric Design Philosophy</p>
                         </div>
                         <div className="flex flex-col justify-center items-center text-center p-4">
                             <GrCycle className="text-taran-blue w-16 h-16" />
-                            <p className="text-taran-orange text-lg font-semibold mt-2">Very Matured Delivery Process</p>
+                            <p className="text-taran-orange font-semibold mt-2">Very Matured Delivery Process</p>
                         </div>
                         <div className="flex flex-col justify-center items-center text-center p-4">
                             <IoIosPeople className="text-taran-blue w-16 h-16" />
-                            <p className="text-taran-orange text-lg font-semibold mt-2">A Team that Breathes Innovation</p>
+                            <p className="text-taran-orange font-semibold mt-2">A Team that Breathes Innovation</p>
                         </div>
                     </div>
                     <div className="flex w-full lg:w-1/3"></div>
