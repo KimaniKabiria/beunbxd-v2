@@ -743,6 +743,11 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
 .ml-8 {
   margin-left: 2rem;
 }
@@ -5511,6 +5516,10 @@ video {
     margin-bottom: 8rem;
   }
 
+  .lg\:mt-20 {
+    margin-top: 5rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -5788,12 +5797,21 @@ video {
 }
 
 @media (min-width: 1140px) {
+  .xl\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .xl\:mr-24 {
     margin-right: 6rem;
   }
 
   .xl\:w-11\/12 {
     width: 91.666667%;
+  }
+
+  .xl\:max-w-screen-2xl {
+    max-width: 1320px;
   }
 
   .xl\:p-12 {

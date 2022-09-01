@@ -32,7 +32,7 @@ return(
                 </h1>
             </div>
             <div className="mt-4 lg:-mt-8 w-full lg:w-2/3 text-black xl:mr-24">
-                <div className="lg:pl-20 xl:pl-32">
+                <div className="">
                     <div className="xl:p-12 lg:p-8 p-6 bg-white rounded-2xl shadow-xl hover:shadow-2xl">
                         <h3 className="leading-relaxed text-2xl lg:text-3xl xl:text-4xl font-bold text-center text-taran-orange lg:text-left mt-4">
                             UI / UX
@@ -56,8 +56,8 @@ return(
                     <div id="develop"/>
                 </h1>
             </div>
-            <div className="mt-4 lg:-mt-8 w-full lg:w-2/3 text-black xl:mr-24">
-                <div className="lg:pl-20 xl:pl-32">
+            <div className="mt-4 lg:-mt-8 lg:mb-12 w-full lg:w-2/3 text-black xl:mr-24">
+                <div className="">
                     <div className="xl:p-12 lg:p-8 p-6 bg-white rounded-2xl shadow-xl hover:shadow-2xl">
                         <h3 className="leading-relaxed text-2xl lg:text-3xl xl:text-4xl font-bold text-center text-taran-orange lg:text-left mt-4">
                             Web & App
@@ -75,14 +75,14 @@ return(
         </div>
     
     {/* Digital Marketing */}
-        <div className="container mx-auto px-6 md:px-0 items-center flex flex-col lg:flex-row lg:mt-12 mt-4 mb-12 lg:mb-32">
+        <div className="container mx-auto px-6 md:px-0 items-center flex flex-col lg:flex-row lg:mt-20 mt-4 mb-12 lg:mb-32">
             <div className="lg:w-1/2 lg:ml-12">
                 <h1 className="flex items-center text-white no-underline">
                     <div id="market"/>
                 </h1>
             </div>
             <div className="mt-4 lg:-mt-8 w-full lg:w-2/3 text-black xl:mr-24">
-                <div className="lg:pl-20 xl:pl-32">
+                <div className="">
                     <div className="xl:p-12 lg:p-8 p-6 bg-white rounded-2xl shadow-xl hover:shadow-2xl">
                         <h3 className="leading-relaxed text-2xl lg:text-3xl xl:text-4xl font-bold text-center text-taran-orange lg:text-left mt-4">
                             Digital
