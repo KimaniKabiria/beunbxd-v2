@@ -17,7 +17,7 @@ export default function DesignHero (){
             <div className="flex flex-col mx-auto px-6 lg:px-12 lg:py-8 lg:flex ">
                 <div className="flex flex-col">
                     <div className="flex flex-col lg:flex-row  text-unbxd-bg rounded-2xl">
-                        <div className="block mx-auto lg:order-last lg:-ml-0 p-12">
+                        <div className="block mx-auto lg:order-last lg:-ml-0 lg:p-12">
                             <div id="design-lottie"  style={{ height: 560 }}/>
                         </div>
                         <div className="flex flex-row justify-center items-center mx-auto lg:w-1/2 px-8 lg:px-12  pb-8 lg:pb-0">
