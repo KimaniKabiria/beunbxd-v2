@@ -22,7 +22,7 @@ export default function HireUs() {
     }, []);
     return (
     <section className="flex items-center mx-auto lg:w-11/12 lg:-mt-12">
-            <div className="flex flex-col mx-auto px-8 lg:px-32 bg-taran-blue rounded-2xl text-white py-8 lg:py-20">
+            <div className="flex flex-col mx-auto px-8 lg:px-32 bg-taran-blue bg-opacity-10 rounded-2xl text-black py-8 lg:py-20 shadow-2xl lg:mb-20">
                     <h1 className="inline-block p-3 lg:text-3xl text-3xl font-bold mb-4 lg:mb-8 border-b-2 border-taran-orange">
                     When To Hire Us.
                     </h1>

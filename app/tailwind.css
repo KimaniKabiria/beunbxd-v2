@@ -1841,6 +1841,10 @@ video {
   background-color: rgb(204 83 51 / var(--tw-bg-opacity));
 }
 
+.bg-taran-blue\/10 {
+  background-color: rgb(35 7 77 / 0.1);
+}
+
 .bg-opacity-60 {
   --tw-bg-opacity: 0.6;
 }
