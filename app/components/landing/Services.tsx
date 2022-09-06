@@ -140,14 +140,14 @@ export default function Services() {
           </div>
         </div>
 
-<div className="hidden lg:flex w-full items-center justify-center py-8 lg:-mb-20">
-  <div className="w-12 h-12">
-    <div id="pulsey3" />
-  </div>
-</div>
+        <div className="hidden lg:flex w-full items-center justify-center py-8 lg:-mb-20">
+          <div className="w-12 h-12">
+            <div id="pulsey3" />
+          </div>
+        </div>
 
         {/* Automation */}
-        <div className="container mx-auto px-6 md:px-0 items-center flex flex-col lg:flex-row mt-4 lg:mt-0 mb-8 lg:mb-0">
+        <div className="container mx-auto px-6 md:px-0 items-center flex flex-col lg:flex-row mt-4 mb-8 lg:mb-12">
           <div className="lg:w-1/2 lg:ml-12 lg:order-last">
             <h1 className="flex items-center text-white no-underline">
               <div id="automation" />
@@ -165,9 +165,10 @@ export default function Services() {
                   &nbsp;
                 </h3>
                 <p className="mt-4 text-left leading-relaxed">
-                  We buid fully automated workflows that takes over all your
-                  repetitive daily tasks and let's you focus on whats important,
-                  Growth and Making Money.
+                  Let the Robots do the dirty work for you. We build fully
+                  automated workflows that takes over all your repetitive daily
+                  tasks and let's you focus on whats important, Growth and
+                  Making Money.
                 </p>
               </div>
             </div>
