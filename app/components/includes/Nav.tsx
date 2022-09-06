@@ -32,7 +32,7 @@ export default function Nav() {
         as="li"
         variant="h6"
         color="blue-gray"
-        className="p-1 font-bold text-taran-blue hover:text-taran-orange"
+        className="p-1 font-semibold text-taran-blue hover:text-taran-orange"
       >
         <Link to="/about">Who are We?</Link>
       </Typography>
@@ -40,7 +40,7 @@ export default function Nav() {
         as="li"
         variant="h6"
         color="blue-gray"
-        className="p-1 font-bold text-taran-blue hover:text-taran-orange"
+        className="p-1 font-semibold text-taran-blue hover:text-taran-orange"
       >
         <Link to="/design">Design</Link>
       </Typography>
@@ -48,7 +48,7 @@ export default function Nav() {
         as="li"
         variant="h6"
         color="blue-gray"
-        className="p-1 font-bold text-taran-blue hover:text-taran-orange"
+        className="p-1 font-semibold text-taran-blue hover:text-taran-orange"
       >
         <a href="#" className="flex items-center">
           Develop
@@ -58,10 +58,20 @@ export default function Nav() {
         as="li"
         variant="h6"
         color="blue-gray"
-        className="p-1 font-bold text-taran-blue hover:text-taran-orange"
+        className="p-1 font-semibold text-taran-blue hover:text-taran-orange"
       >
         <a href="#" className="flex items-center">
           Market
+        </a>
+      </Typography>
+      <Typography
+        as="li"
+        variant="h6"
+        color="blue-gray"
+        className="p-1 font-semibold text-taran-blue hover:text-taran-orange"
+      >
+        <a href="#" className="flex items-center">
+          Automate
         </a>
       </Typography>
     </ul>
