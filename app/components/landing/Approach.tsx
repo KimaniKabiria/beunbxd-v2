@@ -1,12 +1,6 @@
 import React from "react";
 import lottie from "lottie-web";
 
-import ux from "../../assets/images/ux.png";
-import design from "../../assets/images/design-scroll.png";
-import dev from "../../assets/images/dev.png";
-import market from "../../assets/images/sell.png";
-import support from "../../assets/images/support.png";
-
 import UiDo from "../../assets/lotties/ui-do.json";
 import DesignDo from "../../assets/lotties/design-do.json";
 import DevelopDo from "../../assets/lotties/develop-do.json";
