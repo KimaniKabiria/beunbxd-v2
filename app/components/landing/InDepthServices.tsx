@@ -3,12 +3,22 @@ import lottie from "lottie-web";
 import { Button } from "@material-tailwind/react";
 
 import Designer from "../../assets/lotties/designer.json";
+import WebsiteDesigner from "../../assets/lotties/website-designer.json";
+import Ecommerce from "../../assets/lotties/ecommerce.json";
 
 const Tabs = () => {
   React.useEffect(() => {
     lottie.loadAnimation({
       container: document.querySelector("#designer"),
       animationData: Designer,
+    });
+    lottie.loadAnimation({
+      container: document.querySelector("#website-designer"),
+      animationData: WebsiteDesigner,
+    });
+    lottie.loadAnimation({
+      container: document.querySelector("#ecommerce"),
+      animationData: Ecommerce,
     });
   }, []);
   const [openTab, setOpenTab] = React.useState(1);
@@ -55,7 +65,7 @@ const Tabs = () => {
                 href="#link2"
                 role="tablist"
               >
-                Settings
+                Unbxing Websites
               </a>
             </li>
             <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
@@ -74,7 +84,7 @@ const Tabs = () => {
                 href="#link3"
                 role="tablist"
               >
-                Options
+                Unbxing E-Commerce
               </a>
             </li>
             <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
@@ -93,7 +103,7 @@ const Tabs = () => {
                 href="#link4"
                 role="tablist"
               >
-                Unbxing Design
+                Unbxing Automation
               </a>
             </li>
             <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
@@ -112,7 +122,7 @@ const Tabs = () => {
                 href="#link5"
                 role="tablist"
               >
-                Settings
+                Unbxing Business Solutions
               </a>
             </li>
             <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
@@ -131,7 +141,7 @@ const Tabs = () => {
                 href="#link6"
                 role="tablist"
               >
-                Options
+                Unbxing The Market
               </a>
             </li>
           </ul>
@@ -139,7 +149,7 @@ const Tabs = () => {
             <div className="p-8 flex-auto">
               <div className="tab-content tab-space">
                 <div className={openTab === 1 ? "block" : "hidden"} id="link1">
-                  <div className="flex flex-col lg:flex-row">
+                  <div className="flex items-center justify-center flex-col lg:flex-row">
                     <div className="lg:w-1/2">
                       <div id="designer" />
                     </div>
@@ -194,25 +204,102 @@ const Tabs = () => {
                   </div>
                 </div>
                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
-                  <p>
-                    Completely synergize resource taxing relationships via
-                    premier niche markets. Professionally cultivate one-to-one
-                    customer service with robust ideas.
-                    <br />
-                    <br />
-                    Dynamically innovate resource-leveling customer service for
-                    state of the art customer service.
-                  </p>
+                  <div className="flex items-center justify-center flex-col lg:flex-row">
+                    <div className="lg:w-1/2">
+                      <div id="website-designer" />
+                    </div>
+                    <div className="p-8 lg:w-1/2">
+                      <p>
+                        If you want to stand out in a competitive niche, get
+                        your business to the next level, and reach a larger
+                        audience, you might need a great web presence for your
+                        business. Unbxd Creative Lab is a a Creative Web
+                        Development Company Focused On Growing Brands Online.
+                      </p>
+                      <br />
+                      <p>
+                        We are product developers, advisors and engineers
+                        solving business challenges via creating future-ready
+                        apps, websites and digital solutions.
+                      </p>
+                      <br />
+                      <p>
+                        We provide website development services that are on the
+                        cutting edge of today’s technologies. Our Web developers
+                        are versed in all Web technologies such as WordPress,
+                        Drupal, Magento, Shopify. We even custom develop
+                        websites and web applications in React, Laravel Php
+                        Python Django, NodeJS, Ruby on Rails, and .NET. Our
+                        technical wizards mix a potent combination of nerd
+                        learning, geek fest participation, Spock-like technical
+                        brainstorm sessions, and endless hours watching online
+                        tech conferences and listening to propeller head
+                        podcasts. Are these guys geeks? You bet they are!
+                      </p>
+                      <br />
+                      <a href="https://clienthub.beunbxd.com/getunbxd">
+                        <Button
+                          className="inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-lg shadow-sm text-lg lg:text-xl font-medium text-white bg-gradient-to-r from-taran-blue to-taran-orange border-taran-blue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-taran-orange"
+                          ripple={true}
+                        >
+                          <p className="flex">START UNBXING YOUR WEBSITE</p>
+                        </Button>
+                      </a>
+                    </div>
+                  </div>
                 </div>
                 <div className={openTab === 3 ? "block" : "hidden"} id="link3">
-                  <p>
-                    Efficiently unleash cross-media information without
-                    cross-media value. Quickly maximize timely deliverables for
-                    real-time schemas.
-                    <br />
-                    <br /> Dramatically maintain clicks-and-mortar solutions
-                    without functional solutions.
-                  </p>
+                  <div className="flex items-center justify-center flex-col lg:flex-row">
+                    <div className="lg:w-1/2">
+                      <div id="ecommerce" />
+                    </div>
+                    <div className="p-8 lg:w-1/2">
+                      <p>
+                        Your website is more than a brochure. Your website is
+                        meant to inspire action. Unbxd's websites give the user
+                        a clear pathway to this action (the sale). Useful
+                        information is easy-to-read and compelling, while strong
+                        calls to action push them through to the next step of
+                        the buyer’s journey. With clean and intuitive UI/UX
+                        design, mobile compatibility and fast page load speeds,
+                        you’ll see more completed purchases, higher average
+                        order value and improved ROI for your online store with
+                        our e-commerce website development experience.¸
+                      </p>
+                      <br />
+                      <p>
+                        We experience working with the world class e-commerce
+                        platforms, we can analyse, collect data and create a
+                        suitable package that will perfectly fit your needs and
+                        provide a bespoke online experience for your customer
+                        and empower them to make that decision to add to cart
+                        and buy your products.
+                      </p>
+                      <br />
+                      <p>
+                        We provide website development services that are on the
+                        cutting edge of today’s technologies. Our Web developers
+                        are versed in all Web technologies such as WordPress,
+                        Drupal, Magento, Shopify. We even custom develop
+                        websites and web applications in React, Laravel Php
+                        Python Django, NodeJS, Ruby on Rails, and .NET. Our
+                        technical wizards mix a potent combination of nerd
+                        learning, geek fest participation, Spock-like technical
+                        brainstorm sessions, and endless hours watching online
+                        tech conferences and listening to propeller head
+                        podcasts. Are these guys geeks? You bet they are!
+                      </p>
+                      <br />
+                      <a href="https://clienthub.beunbxd.com/getunbxd">
+                        <Button
+                          className="inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-lg shadow-sm text-lg lg:text-xl font-medium text-white bg-gradient-to-r from-taran-blue to-taran-orange border-taran-blue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-taran-orange"
+                          ripple={true}
+                        >
+                          <p className="flex">START UNBXING YOUR WEBSITE</p>
+                        </Button>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
