@@ -5,6 +5,8 @@ import { Button } from "@material-tailwind/react";
 import Designer from "../../assets/lotties/designer.json";
 import WebsiteDesigner from "../../assets/lotties/website-designer.json";
 import Ecommerce from "../../assets/lotties/ecommerce.json";
+import Robot from "../../assets/lotties/robot.json";
+import BusinessSol from "../../assets/lotties/business-meeting.json"
 
 const Tabs = () => {
   React.useEffect(() => {
@@ -19,6 +21,14 @@ const Tabs = () => {
     lottie.loadAnimation({
       container: document.querySelector("#ecommerce"),
       animationData: Ecommerce,
+    });
+    lottie.loadAnimation({
+      container: document.querySelector("#robot"),
+      animationData: Robot,
+    });
+    lottie.loadAnimation({
+      container: document.querySelector("#business-sol"),
+      animationData: BusinessSol,
     });
   }, []);
   const [openTab, setOpenTab] = React.useState(1);
@@ -276,18 +286,35 @@ const Tabs = () => {
                         and buy your products.
                       </p>
                       <br />
+                      <a href="https://clienthub.beunbxd.com/getunbxd">
+                        <Button
+                          className="inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-lg shadow-sm text-lg lg:text-xl font-medium text-white bg-gradient-to-r from-taran-blue to-taran-orange border-taran-blue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-taran-orange"
+                          ripple={true}
+                        >
+                          <p className="flex">START UNBXING YOUR STORE</p>
+                        </Button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className={openTab === 5 ? "block" : "hidden"} id="link5">
+                  <div className="flex items-center justify-center flex-col lg:flex-row">
+                    <div className="lg:w-1/2">
+                      <div id="business-sol" />
+                    </div>
+                    <div className="p-8 lg:w-1/2">
                       <p>
-                        We provide website development services that are on the
-                        cutting edge of today’s technologies. Our Web developers
-                        are versed in all Web technologies such as WordPress,
-                        Drupal, Magento, Shopify. We even custom develop
-                        websites and web applications in React, Laravel Php
-                        Python Django, NodeJS, Ruby on Rails, and .NET. Our
-                        technical wizards mix a potent combination of nerd
-                        learning, geek fest participation, Spock-like technical
-                        brainstorm sessions, and endless hours watching online
-                        tech conferences and listening to propeller head
-                        podcasts. Are these guys geeks? You bet they are!
+                        We can be your trusted and valued technology partner for your business. We offer a world class suite of business solutions for any problem you may want a technology partner for. We can help you UNBXD unlimited opprtunities, solutions and growth
+                      </p>
+                      <br />
+                      <p>
+                        We can create automated workflows using robots and the
+                        latest cutting edge tech to reduce these tasks and let
+                        you focus on what's impotant, growth and making money.
+                        We use Robots to automate business processes that are
+                        repetitive and we let them do their job. With automation
+                        we can actually create time, time that can be used to
+                        add more revenue to your business.
                       </p>
                       <br />
                       <a href="https://clienthub.beunbxd.com/getunbxd">
@@ -295,7 +322,42 @@ const Tabs = () => {
                           className="inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-lg shadow-sm text-lg lg:text-xl font-medium text-white bg-gradient-to-r from-taran-blue to-taran-orange border-taran-blue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-taran-orange"
                           ripple={true}
                         >
-                          <p className="flex">START UNBXING YOUR WEBSITE</p>
+                          <p className="flex">START UNBXING YOUR AUTOMATION</p>
+                        </Button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className={openTab === 4 ? "block" : "hidden"} id="link4">
+                  <div className="flex items-center justify-center flex-col lg:flex-row">
+                    <div className="lg:w-1/2">
+                      <div id="robot" />
+                    </div>
+                    <div className="p-8 lg:w-1/2">
+                      <p>
+                        As a business you have a lot to think about; sales,
+                        marketing, lead generations, meetings, customer follow
+                        ups and more. One thing we know for sure, its a hard
+                        task juggling all these with the little time we have.
+                        Well, we have a solution for that, AUTOMATION.
+                      </p>
+                      <br />
+                      <p>
+                        We can create automated workflows using robots and the
+                        latest cutting edge tech to reduce these tasks and let
+                        you focus on what's impotant, growth and making money.
+                        We use Robots to automate business processes that are
+                        repetitive and we let them do their job. With automation
+                        we can actually create time, time that can be used to
+                        add more revenue to your business.
+                      </p>
+                      <br />
+                      <a href="https://clienthub.beunbxd.com/getunbxd">
+                        <Button
+                          className="inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-lg shadow-sm text-lg lg:text-xl font-medium text-white bg-gradient-to-r from-taran-blue to-taran-orange border-taran-blue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-taran-orange"
+                          ripple={true}
+                        >
+                          <p className="flex">START UNBXING YOUR AUTOMATION</p>
                         </Button>
                       </a>
                     </div>
