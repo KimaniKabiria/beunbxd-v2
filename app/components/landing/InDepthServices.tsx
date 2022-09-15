@@ -6,7 +6,8 @@ import Designer from "../../assets/lotties/designer.json";
 import WebsiteDesigner from "../../assets/lotties/website-designer.json";
 import Ecommerce from "../../assets/lotties/ecommerce.json";
 import Robot from "../../assets/lotties/robot.json";
-import BusinessSol from "../../assets/lotties/business-meeting.json"
+import BusinessSol from "../../assets/lotties/business-meeting.json";
+import Marketing from "../../assets/lotties/social-media-marketing.json";
 
 const Tabs = () => {
   React.useEffect(() => {
@@ -29,6 +30,10 @@ const Tabs = () => {
     lottie.loadAnimation({
       container: document.querySelector("#business-sol"),
       animationData: BusinessSol,
+    });
+    lottie.loadAnimation({
+      container: document.querySelector("#marketing"),
+      animationData: Marketing,
     });
   }, []);
   const [openTab, setOpenTab] = React.useState(1);
@@ -297,14 +302,18 @@ const Tabs = () => {
                     </div>
                   </div>
                 </div>
-                <div className={openTab === 5 ? "block" : "hidden"} id="link5">
+                <div className={openTab === 4 ? "block" : "hidden"} id="link4">
                   <div className="flex items-center justify-center flex-col lg:flex-row">
                     <div className="lg:w-1/2">
-                      <div id="business-sol" />
+                      <div id="robot" />
                     </div>
                     <div className="p-8 lg:w-1/2">
                       <p>
-                        We can be your trusted and valued technology partner for your business. We offer a world class suite of business solutions for any problem you may want a technology partner for. We can help you UNBXD unlimited opprtunities, solutions and growth
+                        We can be your trusted and valued technology partner for
+                        your business. We offer a world class suite of business
+                        solutions for any problem you may want a technology
+                        partner for. We can help you UNBXD unlimited
+                        opprtunities, solutions and growth
                       </p>
                       <br />
                       <p>
@@ -328,28 +337,35 @@ const Tabs = () => {
                     </div>
                   </div>
                 </div>
-                <div className={openTab === 4 ? "block" : "hidden"} id="link4">
+                <div className={openTab === 5 ? "block" : "hidden"} id="link5">
                   <div className="flex items-center justify-center flex-col lg:flex-row">
                     <div className="lg:w-1/2">
-                      <div id="robot" />
+                      <div id="business-sol" />
                     </div>
                     <div className="p-8 lg:w-1/2">
                       <p>
-                        As a business you have a lot to think about; sales,
-                        marketing, lead generations, meetings, customer follow
-                        ups and more. One thing we know for sure, its a hard
-                        task juggling all these with the little time we have.
-                        Well, we have a solution for that, AUTOMATION.
+                        At Unbxd Creative Lab we are looking to further better
+                        connections within organisations, between brands and
+                        people, between humanity and technology.
                       </p>
                       <br />
                       <p>
-                        We can create automated workflows using robots and the
-                        latest cutting edge tech to reduce these tasks and let
-                        you focus on what's impotant, growth and making money.
-                        We use Robots to automate business processes that are
-                        repetitive and we let them do their job. With automation
-                        we can actually create time, time that can be used to
-                        add more revenue to your business.
+                        As a company you may need to optimize your processes,
+                        workflows and day to day activities. A technology
+                        partner would ideal to help you achieve this milestone.
+                        We are happy and glad to be you trusted technology
+                        partner.
+                      </p>
+                      <br />
+                      <p>
+                        As a Unbxd we have also sought out and partnered with
+                        top of the class business solution providers. By doing
+                        this we have filtered out and curated a list of
+                        providers that we can work with together and build out a
+                        solution that fits all your bells and whistles. Let us
+                        handle the planning, excecution, delivery and most
+                        impotantly support for any of the solutions that we will
+                        use to unbox you.
                       </p>
                       <br />
                       <a href="https://clienthub.beunbxd.com/getunbxd">
@@ -357,7 +373,52 @@ const Tabs = () => {
                           className="inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-lg shadow-sm text-lg lg:text-xl font-medium text-white bg-gradient-to-r from-taran-blue to-taran-orange border-taran-blue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-taran-orange"
                           ripple={true}
                         >
-                          <p className="flex">START UNBXING YOUR AUTOMATION</p>
+                          <p className="flex">START UNBXING YOUR BUSINESS</p>
+                        </Button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className={openTab === 6 ? "block" : "hidden"} id="link6">
+                  <div className="flex items-center justify-center flex-col lg:flex-row">
+                    <div className="lg:w-1/2">
+                      <div id="marketing" />
+                    </div>
+                    <div className="p-8 lg:w-1/2">
+                      <p>
+                        After a successful journery of Designing, Developing and
+                        Automation of your project, you need to let the world
+                        know of this big thing you have done. We can help you
+                        make that noise. With analytics and data driven
+                        approach, we can tailor marketing campaigns throught the
+                        digital space.
+                      </p>
+                      <br />
+                      <p>
+                        We can help you tailor marketing campaigns that will be
+                        effective using the Meta Business Suite (Advertise on
+                        WhatsApp, Facebook and Instagram), Google Adsense
+                        (Google Search and Youtube) and any other Social Media
+                        of choice. This is what we call data driven social media
+                        advertising.
+                      </p>
+                      <br />
+                      <p>
+                        As we are on the design and development journey with
+                        you, how we will market is critical in the process. This
+                        will allow are deliver a product that is marketing ready
+                        without having to do any change requests. We will be
+                        your first step into making noise for your product. We
+                        can help your baby say its first words and show the
+                        world what you offer.
+                      </p>
+                      <br />
+                      <a href="https://clienthub.beunbxd.com/getunbxd">
+                        <Button
+                          className="inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-lg shadow-sm text-lg lg:text-xl font-medium text-white bg-gradient-to-r from-taran-blue to-taran-orange border-taran-blue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-taran-orange"
+                          ripple={true}
+                        >
+                          <p className="flex">START UNBXING THE MARKET</p>
                         </Button>
                       </a>
                     </div>
