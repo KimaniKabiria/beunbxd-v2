@@ -4,6 +4,7 @@ import HireUs from "~/components/landing/HireUs";
 import OurApproach from "~/components/landing/Approach";
 import ProductFeatures from "~/components/landing/ProductFeatures";
 import InDepthServices from "~/components/landing/InDepthServices";
+import CompaniesSlider from "~/components/landing/CompaniesSlider";
 
 export default function Index() {
   return (
@@ -15,6 +16,7 @@ export default function Index() {
         <HireUs />
         <OurApproach />
         <ProductFeatures />
+        <CompaniesSlider />
       </div>
     </div>
   );
