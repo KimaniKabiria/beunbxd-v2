@@ -94,7 +94,7 @@ export default function Services() {
                   &nbsp;
                 </h3>
                 <p className="mt-4 text-left leading-relaxed">
-                  We help in turning ideas into products. We have a team of well
+                  We help turn ideas into products. We have a team of well
                   experienced developers who love creating technology. We help
                   project teams to design and develop human centered products.
                 </p>
@@ -165,7 +165,7 @@ export default function Services() {
                   &nbsp;
                 </h3>
                 <p className="mt-4 text-left leading-relaxed">
-                  Let the Robots do the dirty work for you. We build fully
+                  Let the Robots do the work for you. We build fully
                   automated workflows that takes over all your repetitive daily
                   tasks and let's you focus on whats important, Growth and
                   Making Money.
