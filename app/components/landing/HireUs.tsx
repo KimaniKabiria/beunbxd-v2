@@ -32,7 +32,7 @@ export default function HireUs() {
                                 <div id="internet"/>
                             </div>
                             <p className="mt-4 lg:text-lg text-base text-center lg:text-left leading-relaxed">
-                            When a you want to stand up to the modern internet culture.
+                            When you want to stand up to the modern internet culture.
                             </p>
                         </div>
                     <div className="flex flex-col justify-center items-center lg:w-1/3 lg:px-12 mt-16 lg:mt-0">
@@ -48,7 +48,7 @@ export default function HireUs() {
                             <div id="splash"/>
                         </div>
                         <p className="mt-4 lg:text-lg text-base text-center xl:text-left lg:text-left leading-relaxed">
-                        When a you need to make a splash.
+                        When you need to make a splash.
                         </p>
                     </div>
                     </div>
