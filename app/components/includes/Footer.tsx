@@ -155,6 +155,22 @@ export default function Footer(){
                         </div>
                         <div className="w-full px-4 lg:w-1/3 md:w-1/2">
                             <h2 className="mb-2 font-bold tracking-widest">
+                            Automate
+                            </h2>
+                            <ul className="mb-8 space-y-2 text-sm list-none">
+                                <li>
+                                    <a className="text-white hover:underline">Chatbots</a>
+                                </li>
+                                <li>
+                                    <a className="text-white hover:underline">Business Automation</a>
+                                </li>
+                                <li>
+                                    <a className="text-white hover:underline">Robotics Process Automation</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="w-full px-4 lg:w-1/3 md:w-1/2">
+                            <h2 className="mb-2 font-bold tracking-widest">
                             Company
                             </h2>
                             <ul className="mb-8 space-y-2 text-sm list-none">
