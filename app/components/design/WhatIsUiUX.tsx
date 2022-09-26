@@ -15,7 +15,7 @@ export default function WhatIsUiUx() {
       <section className="flex flex-col mx-auto xl:w-11/12 rounded-2xl">
         <div className="lg:p-20">
           <div className="flex flex-col lg:flex-row">
-            <div className="flex items-center lg:-ml-20">
+            <div className="flex items-center md:w-2/3 lg:w-full lg:-ml-20">
               <div id="ui-ux" />
             </div>
             <div className="flex flex-col lg:w-2/3 p-8 lg:p-0 items-center justify-center text-center">

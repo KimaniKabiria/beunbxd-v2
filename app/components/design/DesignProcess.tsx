@@ -25,7 +25,7 @@ export default function DesignProcess(){
                 </h1>
                 <p className="text-base pt-4"> my process to build awesone things</p>
             </div>
-            <div className="w-full lg:grid grid-cols-5">
+            <div className="w-full lg:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
                 
                 <motion.div
                     whileHover={{ scale: 0.95 }}
