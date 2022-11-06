@@ -7,12 +7,17 @@ import { Button } from "@material-tailwind/react";
 
 import heroImage from "../../assets/images/unbxd-box2.png";
 import Unbx from "../../assets/lotties/unbx.json";
+import Call2 from "../../assets/lotties/icons/call.json"
 
 export default function UnbxdHero() {
   React.useEffect(() => {
     lottie.loadAnimation({
       container: document.querySelector("#unbx"),
       animationData: Unbx,
+    });
+    lottie.loadAnimation({
+      container: document.querySelector("#call2"),
+      animationData: Call2
     });
   }, []);
 
@@ -43,7 +48,7 @@ export default function UnbxdHero() {
               className="inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-lg shadow-sm text-lg lg:text-xl font-medium text-white bg-taran-blue border-taran-blue hover:text-white hover:bg-taran-orange focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-taran-orange"
               ripple={true}
             >
-              <div id="call" className="w-12 h-12 pr-2" />
+              <div id="call2" className="w-12 h-12 pr-2" />
               <p className="flex">Get UNBXD!</p>
             </Button>
           </a>
