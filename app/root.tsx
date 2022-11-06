@@ -12,7 +12,8 @@ import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 
 import Nav from "./components/includes/Nav";
 import Footer from "./components/includes/Footer";
-import Icon from "./assets/images/icon.png"
+import Icon from "./assets/images/icon.png";
+import { Analytics } from "@vercel/analytics/react";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
@@ -23,9 +24,9 @@ export const meta: MetaFunction = () => ({
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: styles },
   {
-    rel: 'icon',
+    rel: "icon",
     href: Icon,
-    type: 'image/png',
+    type: "image/png",
   },
 ];
 
@@ -38,12 +39,13 @@ export default function App() {
       </head>
       <body className="bg-unbxd-bg w-full">
         <RoughNotationGroup show={true}>
-          <Nav/>
+          <Nav />
           <Outlet />
           <ScrollRestoration />
           <Scripts />
           <LiveReload />
           <Footer />
+          <Analytics />
         </RoughNotationGroup>
       </body>
     </html>
