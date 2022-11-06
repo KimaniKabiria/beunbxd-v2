@@ -5,14 +5,15 @@ import OurApproach from "~/components/landing/Approach";
 import ProductFeatures from "~/components/landing/ProductFeatures";
 import InDepthServices from "~/components/landing/InDepthServices";
 import CompaniesSlider from "~/components/landing/CompaniesSlider";
+import UnbxdHero from "~/components/landing/UnbxdHero";
 
 export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif" }} className="w-full -mt-20">
-      <Hero />
+      <UnbxdHero />
       <div className="flex flex-col justify-center items center">
         <Services />
-        <InDepthServices />
+        {/* <InDepthServices /> */}
         <HireUs />
         <OurApproach />
         <ProductFeatures />
