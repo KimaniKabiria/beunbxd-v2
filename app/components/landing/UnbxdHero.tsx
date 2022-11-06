@@ -19,7 +19,7 @@ export default function UnbxdHero() {
   const colors = ["#009193", "#cc5333", "#cc5333", "#3B82F6"];
 
   return (
-    <div className="flex flex-col lg:w-11/12 mx-auto px-6 lg:px-20 justify-center items-center mt-24">
+    <div className="flex flex-col lg:w-11/12 mx-auto px-6 lg:px-20 justify-center items-center mt-32">
       <div className="flex flex-col justify-center items-center xl:py-12 text-taran-blue text-4xl lg:text-6xl text-center">
         <div className="flex flex-col">
           <h1 className="font-bold">Creating out of the Box</h1>
