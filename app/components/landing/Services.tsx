@@ -164,7 +164,7 @@ export default function Services() {
             </h1>
           </div>
           <div className="mt-4 lg:-mt-8 w-full lg:w-2/3 text-black xl:mr-24">
-            <div className="">
+            <a href="/">
               <div className="xl:p-12 lg:p-8 p-6 bg-white rounded-2xl shadow-2xl hover:shadow-xl">
                 <h3 className="leading-relaxed text-2xl lg:text-3xl xl:text-4xl font-bold text-center text-taran-orange lg:text-left mt-4">
                   Digital &nbsp;
