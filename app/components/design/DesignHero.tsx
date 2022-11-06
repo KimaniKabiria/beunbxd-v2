@@ -14,7 +14,7 @@ export default function DesignHero (){
 
     return (
         <section className="flex flex-col mx-auto lg:w-11/12 px-6 lg:px-20 justify-center items-center lg:bg-gradient-to-r lg:from-taran-orange lg:to-taran-blue bg-gradient-to-b from-taran-blue to-taran-orange mt-24 rounded-2xl">
-            <div className="flex flex-col mx-auto px-6 lg:px-12 lg:py-8 lg:flex ">
+            <div className="flex flex-col mx-auto px-6 lg:px-12 lg:flex ">
                 <div className="flex flex-col">
                     <div className="flex flex-col lg:flex-row  text-unbxd-bg rounded-2xl">
                         <div className="block mx-auto lg:order-last lg:-ml-0 lg:p-12">
@@ -44,11 +44,11 @@ export default function DesignHero (){
                                             }}
                                         />
                                     </h1>
-                                <p className="mt-8 text-xl lg:text-3xl font-semibold">
-                                    Intuitive
-                                    <span className="text-taran-blue font-semibold border-b-2 border-taran-blue"> Design </span>
-                                    is how we give the user new
-                                    <span className="text-taran-blue font-semibold border-b-2 border-taran-blue"> Superpowers </span>
+                                <p className="mt-8 text-xl lg:text-4xl font-semibold">
+                                    Beautiful
+                                    <span className="text-taran-blue font-semibold border-b-2 border-taran-blue"> Solutions </span>
+                                    to complex
+                                    <span className="text-taran-blue font-semibold border-b-2 border-taran-blue"> Problems </span>
                                     !
                                 </p>
                             </div>

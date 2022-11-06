@@ -1,4 +1,6 @@
 import DesignHero from "~/components/design/DesignHero";
+import WhatIsUiUx from "~/components/design/WhatIsUiUX";
+import DesignProcess from "~/components/design/DesignProcess";
 
 export default function DesignIndex() {
   return (
@@ -10,6 +12,10 @@ export default function DesignIndex() {
             <h1 className="lg:text-6xl text-3xl">You deserve a <span className="text-taran-blue underline font-medium"> dedicated partner</span> to help you design <span className="text-taran-orange underline font-medium"> growth-oriented products</span> that create impact for your customers.</h1>
         </div>
       </section>
+
+      <WhatIsUiUx />
+      
+      <DesignProcess />
 
     </div>
   );
