@@ -848,6 +848,14 @@ video {
   margin-top: -3rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
 .block {
   display: block;
 }
@@ -5563,6 +5571,10 @@ video {
 
   .lg\:-mb-20 {
     margin-bottom: -5rem;
+  }
+
+  .lg\:mb-24 {
+    margin-bottom: 6rem;
   }
 
   .lg\:block {
