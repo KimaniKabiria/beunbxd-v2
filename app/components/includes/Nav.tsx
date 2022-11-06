@@ -78,7 +78,7 @@ export default function Nav() {
   );
  
   return (
-    <Navbar className="sticky top-0 z-50 max-w-full flex flex-wrap items-center justify-between mx-auto py-4 px-4 lg:px-8 bg-unbxd-bg bg-opacity-75 backdrop-filter backdrop-blur backdrop-saturate-150 shadow-xl border-none rounded-none">
+    <Navbar className="sticky top-0 z-50 max-w-full flex flex-wrap items-center justify-between mx-auto py-4 px-4 lg:px-8 bg-unbxd-bg bg-opacity-75 backdrop-filter backdrop-blur backdrop-saturate-150 border-none rounded-none shadow-none">
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
         <Link to="/">
           <img

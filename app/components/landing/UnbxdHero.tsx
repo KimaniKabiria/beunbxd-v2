@@ -20,7 +20,7 @@ export default function UnbxdHero() {
 
   return (
     <div className="flex flex-col lg:w-11/12 mx-auto px-6 lg:px-20 justify-center items-center mt-24">
-      <div className="flex flex-col justify-center items-center xl:py-12 text-taran-blue text-4xl lg:text-6xl">
+      <div className="flex flex-col justify-center items-center xl:py-12 text-taran-blue text-4xl lg:text-6xl text-center">
         <div className="flex flex-col">
           <h1 className="font-bold">Creating out of the Box</h1>
         </div>
@@ -29,7 +29,7 @@ export default function UnbxdHero() {
             Digital Products
           </RainbowHighlight>
         </div>
-        <div className="text-base text-center w-1/2">
+        <div className="text-base text-center lg:w-1/2">
           <p>
             We are a creative lab that creates bespoke digital products that
             live on the internet. We design and develop digital products and
@@ -48,7 +48,7 @@ export default function UnbxdHero() {
             </Button>
           </a>
         </div>
-        <div className="flex mx-auto">
+        <div className="flex mx-auto -mt-12 lg:mt-0">
           <div id="unbx" style={{ height: 520 }} />
         </div>
       </div>
