@@ -14,7 +14,7 @@ export default function GetUnbxd() {
     });
   }, []);
   return (
-    <section className="flex lg:w-11/12 mx-auto bg-unbxd-bg bg-opacity-70 mb-20 py-20 lg:py-0">
+    <section className="flex lg:w-11/12 mx-auto bg-unbxd-bg bg-opacity-70 py-20 lg:py-0">
       <div className="flex flex-col mx-auto px-8 lg:px-36 py-8 lg:py-32 justify-center items-center text-center">
         <h1 className="text-taran-blue font-black text-3xl lg:text-5xl">
           Getting Unbxd is very Easy

@@ -14,11 +14,11 @@ export default function Index() {
       <UnbxdHero />
       <div className="flex flex-col justify-center items center">
         <ProblemIntro />
-        <Services />
         <GetUnbxd />
+        <Services />
+        <ProductFeatures />
         {/* <HireUs /> */}
         <OurApproach />
-        <ProductFeatures />
         <CompaniesSlider />
       </div>
     </div>
