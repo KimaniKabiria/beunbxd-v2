@@ -36,9 +36,9 @@ export default function OurApproach() {
     });
   }, []);
   return (
-    <section className="flex lg:w-11/12 mx-auto bg-unbxd-bg bg-opacity-70 mb-20">
+    <section className="flex lg:w-11/12 mx-auto bg-unbxd-bg bg-opacity-70">
       <div className="flex flex-col mx-auto px-8 lg:px-36 py-8 lg:py-32">
-        <h1 className="inline-block text-taran-orange p-3 lg:text-3xl text-3xl font-bold mb-4 border-b-2 border-taran-blue">
+        <h1 className="inline-block text-taran-blue p-3 lg:text-5xl text-3xl font-bold mb-4 text-center">
           Our Unbxing Approach.
         </h1>
         <div className="flex flex-col lg:flex-row mx-auto text-black mt-4 mb-12">
@@ -93,11 +93,23 @@ export default function OurApproach() {
         </div>
         <div className="flex flex-col lg:grid lg:grid-cols-3 mx-auto text-taran-blue items-center justify-center lg:px-12 mt-8">
           <div className="flex flex-col justify-center items-center lg:w-full lg:px-2 mt-8">
+            <div className="w-2/3">
+              <div id="rpa" />
+            </div>
+            <p className="mt-4 text-lg font-bold text-center leading-relaxed text-taran-orange">
+              4. Process Automation
+            </p>
+            <p className="text-base text-center leading-relaxed">
+              Our team of automation experts, create automation services from
+              analyzed business cases to help you otimize your business. We let the robots do the dirty work for you.
+            </p>
+          </div>
+          <div className="flex flex-col justify-center items-center lg:w-full lg:px-2 mt-8">
             <div className="w-1/2">
               <div id="market-do" />
             </div>
             <p className="mt-4 text-lg font-bold text-center leading-relaxed text-taran-orange">
-              4. Market
+              5. Market
             </p>
             <p className="text-base text-center leading-relaxed">
               Our experienced digital marketers work with you to co-create
@@ -110,25 +122,13 @@ export default function OurApproach() {
               <div id="support-do" />
             </div>
             <p className="mt-4 text-lg font-bold text-center leading-relaxed text-taran-orange">
-              5. Support & Maintenance
+              6. Support & Maintenance
             </p>
             <p className="text-base text-center leading-relaxed">
               We see our partnership continue post-launch of your project
               through support for maintenance and ongoing improvements, based on
               business and user feedback to help you roadmap your digital
               presence and assets.
-            </p>
-          </div>
-          <div className="flex flex-col justify-center items-center lg:w-full lg:px-2 mt-8">
-            <div className="w-2/3">
-              <div id="rpa" />
-            </div>
-            <p className="mt-4 text-lg font-bold text-center leading-relaxed text-taran-orange">
-              6. Process Automation
-            </p>
-            <p className="text-base text-center leading-relaxed">
-              Our team of automation experts, create automation services from
-              analyzed business cases to help you otimize your business. We let the robots do the dirty work for you.
             </p>
           </div>
         </div>
