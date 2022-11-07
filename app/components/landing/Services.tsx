@@ -1,5 +1,6 @@
 import React from "react";
 import lottie from "lottie-web";
+import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import { RainbowHighlight } from "../includes/RainbowHighlight";
 
 import Develop from "../../assets/lotties/develop.json";
@@ -43,22 +44,22 @@ export default function Services() {
   const colors = ["#fcf6f5", "#23074d", "#cc5333", "#3B82F6"];
 
   return (
-    <section className="flex flex-col mx-auto xl:w-11/12 rounded-2xl">
+    <section className="flex flex-col mx-auto xl:w-11/12 rounded-2xl px-4 lg:px-32">
       <div className="lg:py-20">
-        <div className="flex w-full justify-center items-center text-center py-8 text-white font-black text-4xl lg:text-6xl">
+        <div className="flex flex-col w-full justify-center items-center text-center py-8 text-white font-black text-4xl lg:text-6xl">
           <RainbowHighlight color={colors[2]}>What we do</RainbowHighlight>
+          <p className="text-base text-taran-blue">Here is what's up our sleeves.</p>
         </div>
-        {/* UI / UX Design */}
-        <div className="container mx-auto px-6 md:px-0 items-center flex flex-col lg:flex-row mt-4">
-          <div className="lg:w-1/2 lg:ml-12">
-            <h1 className="flex items-center text-white no-underline">
-              <div id="ui-design" />
-            </h1>
-          </div>
-          <div className="mt-4 w-full lg:w-2/3 text-black xl:mr-24">
-            <a href="/design">
-              <div className="xl:p-12 lg:p-8 p-6 bg-white rounded-2xl shadow-2xl hover:shadow-xl">
-                <h3 className="leading-relaxed text-2xl lg:text-3xl xl:text-4xl font-bold text-center text-taran-orange lg:text-left mt-4">
+
+        <section className="grid lg:grid-cols-2 grid-cols-1 gap-10 antialiased pt-8">
+          {/* UI / UX Design */}
+          <a href="/design">
+            <article className="flex flex-col shadow-xl mx-auto w-full bg-red-100/30 dark:bg-red-100/10 py-20 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer max-h-190 rounded-md">
+              <div className="lg:h-62 lg:px-12 px-4 lg:py-6">
+                <div id="ui-design" />
+              </div>
+              <h1 className="font-extrabold text-6xl mb-10 text-kimmi-teal dark:text-white">
+                <h3 className="leading-relaxed text-3xl xl:text-4xl font-bold text-center text-taran-orange lg:text-left mt-4">
                   UI / UX &nbsp;
                   <span className="text-white font-bold">
                     {" "}
@@ -68,33 +69,23 @@ export default function Services() {
                   </span>
                   &nbsp;
                 </h3>
-                <p className="mt-4 text-left leading-relaxed">
-                  It all starts with a bespoke design. We create tailor made
-                  designs for your website or app to give your project that
-                  unique and personal touch to your clients.
-                </p>
+              </h1>
+              <p className="leading-relaxed">
+                It all starts with a bespoke design. We create tailor made
+                designs for your website or app to give your project that unique
+                and personal touch to your clients.
+              </p>
+            </article>
+          </a>
+
+          {/* Development */}
+          <a href="#">
+            <article className="flex flex-col shadow-xl mx-auto w-full bg-yellow-100/30 dark:bg-yellow-100/10 py-20 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer max-h-190 rounded-md">
+              <div className="lg:h-62 lg:px-12 px-4 lg:py-8">
+                <div id="develop" />
               </div>
-            </a>
-          </div>
-        </div>
-
-        <div className="hidden lg:flex w-full items-center justify-center py-8 lg:-mt-20">
-          <div className="w-12 h-12">
-            <div id="pulsey" />
-          </div>
-        </div>
-
-        {/* Development */}
-        <div className="container mx-auto px-6 md:px-0 items-center flex flex-col lg:flex-row mt-4 mb-8 lg:mb-0">
-          <div className="lg:w-1/2 lg:ml-12 lg:order-last">
-            <h1 className="flex items-center text-white no-underline">
-              <div id="develop" />
-            </h1>
-          </div>
-          <div className="mt-4 lg:-mt-8 lg:mb-12 w-full lg:w-2/3 text-black xl:mr-24">
-            <a href="/">
-              <div className="xl:p-12 lg:p-8 p-6 bg-white rounded-2xl shadow-2xl hover:shadow-xl">
-                <h3 className="leading-relaxed text-2xl lg:text-3xl xl:text-4xl font-bold text-center text-taran-orange lg:text-left mt-4">
+              <h1 className="font-extrabold text-6xl mb-10 text-kimmi-teal dark:text-white">
+                <h3 className="leading-relaxed text-3xl xl:text-4xl font-bold text-center text-taran-orange lg:text-left mt-4">
                   Web & App &nbsp;
                   <span className="text-white font-bold">
                     {" "}
@@ -104,33 +95,23 @@ export default function Services() {
                   </span>
                   &nbsp;
                 </h3>
-                <p className="mt-4 text-left leading-relaxed">
-                  We help turn ideas into products. We have a team of well
-                  experienced developers who love creating technology. We help
-                  project teams to design and develop human centered products.
-                </p>
+              </h1>
+              <p className="leading-relaxed">
+                We help turn ideas into products. We have a team of well
+                experienced developers who love creating technology. We help
+                project teams to design and develop human centered products.
+              </p>
+            </article>
+          </a>
+
+          {/* Automation */}
+          <a href="#">
+            <article className="flex flex-col shadow-xl mx-auto w-full bg-blue-300/20 dark:bg-red-100/10 py-20 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer max-h-190 rounded-md">
+              <div className="lg:h-62 lg:px-12 px-4 lg:py-6">
+                <div id="automation" />
               </div>
-            </a>
-          </div>
-        </div>
-
-        <div className="hidden lg:flex w-full items-center justify-center">
-          <div className="w-12 h-12">
-            <div id="pulsey2" />
-          </div>
-        </div>
-
-        {/* Automation */}
-        <div className="container mx-auto px-6 md:px-0 items-center flex flex-col lg:flex-row mt-4 mb-8 lg:mb-0">
-          <div className="lg:w-1/2 lg:ml-12">
-            <h1 className="flex items-center text-white no-underline">
-              <div id="automation" />
-            </h1>
-          </div>
-          <div className="mt-4 lg:-mt-8 w-full lg:w-2/3 text-black xl:mr-24">
-            <a href="/">
-              <div className="xl:p-12 lg:p-8 p-6 bg-white rounded-2xl shadow-2xl hover:shadow-xl">
-                <h3 className="leading-relaxed text-2xl lg:text-3xl xl:text-4xl font-bold text-center text-taran-orange lg:text-left mt-4">
+              <h1 className="font-extrabold text-6xl mb-10 text-kimmi-teal dark:text-white">
+                <h3 className="leading-relaxed text-3xl xl:text-4xl font-bold text-center text-taran-orange lg:text-left mt-4">
                   Business &nbsp;
                   <span className="text-white font-bold">
                     {" "}
@@ -140,33 +121,23 @@ export default function Services() {
                   </span>
                   &nbsp;
                 </h3>
-                <p className="mt-4 text-left leading-relaxed">
-                  Let the Robots do the work for you. We build fully automated
-                  workflows that takes over all your repetitive daily tasks and
-                  let's you focus on whats important, Growth and Making Money.
-                </p>
+              </h1>
+              <p className="leading-relaxed">
+                Let the Robots do the work for you. We build fully automated
+                workflows that takes over all your repetitive daily tasks and
+                let's you focus on whats important, Growth and Making Money.
+              </p>
+            </article>
+          </a>
+
+          {/* Digital Marketing */}
+          <a href="#">
+            <article className="flex flex-col shadow-xl mx-auto w-full bg-purple-100/20 dark:bg-red-100/10 py-20 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer max-h-190 rounded-md">
+              <div className="lg:h-62 lg:px-12 px-4 lg:py-6">
+                <div id="market" />
               </div>
-            </a>
-          </div>
-        </div>
-
-        <div className="hidden lg:flex w-full items-center justify-center lg:-mb-20">
-          <div className="w-12 h-12">
-            <div id="pulsey3" />
-          </div>
-        </div>
-
-        {/* Digital Marketing */}
-        <div className="container mx-auto px-6 md:px-0 items-center flex flex-col lg:flex-row mt-32 mb-24">
-          <div className="lg:w-1/2 lg:ml-12 lg:order-last">
-            <h1 className="flex items-center text-white no-underline">
-              <div id="market" />
-            </h1>
-          </div>
-          <div className="mt-4 lg:-mt-8 w-full lg:w-2/3 text-black xl:mr-24">
-            <a href="/">
-              <div className="xl:p-12 lg:p-8 p-6 bg-white rounded-2xl shadow-2xl hover:shadow-xl">
-                <h3 className="leading-relaxed text-2xl lg:text-3xl xl:text-4xl font-bold text-center text-taran-orange lg:text-left mt-4">
+              <h1 className="font-extrabold text-6xl mb-10 text-kimmi-teal dark:text-white">
+                <h3 className="leading-relaxed text-3xl xl:text-4xl font-bold text-center text-taran-orange lg:text-left mt-4">
                   Digital &nbsp;
                   <span className="text-white font-bold">
                     {" "}
@@ -176,18 +147,18 @@ export default function Services() {
                   </span>
                   &nbsp;
                 </h3>
-                <p className="mt-4 text-left leading-relaxed">
+              </h1>
+              <p className="leading-relaxed">
                   By understanding your users and business needs, we create
                   custom digital campaigns that help you deliver your message to
                   specific clients through the right digital channels. This way,
                   you can gather feedback directly from individual users, and
                   analyse the next steps for your business with marketing
                   performance reports.
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
+              </p>
+            </article>
+          </a>
+        </section>
       </div>
     </section>
   );
