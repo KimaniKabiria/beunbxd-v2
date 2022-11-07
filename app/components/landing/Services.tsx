@@ -44,7 +44,7 @@ export default function Services() {
   const colors = ["#fcf6f5", "#23074d", "#cc5333", "#3B82F6"];
 
   return (
-    <section className="flex flex-col mx-auto xl:w-11/12 rounded-2xl pb-20 lg:pb-48 px-4 lg:px-32">
+    <section className="flex flex-col mx-auto xl:w-11/12 rounded-2xl px-4 lg:px-32">
       <div className="lg:py-20">
         <div className="flex flex-col w-full justify-center items-center text-center py-8 text-white font-black text-4xl lg:text-6xl">
           <RainbowHighlight color={colors[2]}>What we do</RainbowHighlight>
