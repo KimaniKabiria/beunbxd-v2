@@ -34,7 +34,7 @@ export default function Nav() {
         color="blue-gray"
         className="p-1 font-semibold text-taran-blue hover:text-taran-orange"
       >
-        <Link to="/about">Who are We?</Link>
+        <Link to="/lab">Creative Lab</Link>
       </Typography>
       <Typography
         as="li"
@@ -61,7 +61,7 @@ export default function Nav() {
         className="p-1 font-semibold text-taran-blue hover:text-taran-orange"
       >
         <a href="#" className="flex items-center">
-          Market
+          Automate
         </a>
       </Typography>
       <Typography
@@ -71,7 +71,7 @@ export default function Nav() {
         className="p-1 font-semibold text-taran-blue hover:text-taran-orange"
       >
         <a href="#" className="flex items-center">
-          Automate
+          Market
         </a>
       </Typography>
     </ul>

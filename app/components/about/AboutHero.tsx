@@ -1,15 +1,70 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
+import { RainbowHighlight } from "../includes/RainbowHighlight";
+import { RoughNotation } from "react-rough-notation";
 
 import logo from "../../assets/images/logo-black.png";
 
 export default function AboutHero() {
+  const colors = ["#009193", "#23074d", "#cc5333", "#3B82F6"];
+
   return (
     <section className="w-full lg:py-12 lg:mb-12">
-      <div className="container mx-auto px-8 lg:flex lg:mt-32 p-20 lg:p-0 lg:pb-20">
-        <div className="flex w-full flex-col">
+      <div className="container mx-auto px-8 lg:flex p-20 lg:p-0 lg:pb-20">
+        <div className="flex justify-center items-center w-full flex-col">
+          <div className="lg:w-9/12 justify-center items-center lg:py-20 py-12 text-taran-blue text-3xl lg:text-5xl text-center">
+            <h1>
+              We are a creative lab that creates{" "}
+              <RainbowHighlight color={colors[2]}>
+                <span className="text-white">bespoke digital products</span>
+              </RainbowHighlight>{" "}
+              that{" "}
+              <RainbowHighlight color={colors[1]}>
+                <span className="text-white">live on the internet</span>
+              </RainbowHighlight>{" "}
+              . We{" "}
+              <RoughNotation type="underline" color={colors[2]} padding={0}>
+                design
+              </RoughNotation>{" "}
+              and{" "}
+              <RoughNotation type="underline" color={colors[2]} padding={0}>
+                develop
+              </RoughNotation>{" "}
+              digital products and online experiences that help our clients{" "}
+              <RoughNotation type="circle" color={colors[2]} padding={2}>
+                grow
+              </RoughNotation>{" "}
+              ,{" "}
+              <RoughNotation type="circle" color={colors[1]} padding={2}>
+                innovate
+              </RoughNotation>{" "}
+              , and{" "}
+              <RoughNotation type="circle" color={colors[2]} padding={2}>
+                transform
+              </RoughNotation>{" "}
+              . We {" "}
+              <RoughNotation type="underline" color={colors[1]} padding={0}>
+              listen
+              </RoughNotation>{" "}, {" "}
+              <RoughNotation type="underline" color={colors[1]} padding={0}>
+              learn
+              </RoughNotation>{" "} and {" "}
+              <RoughNotation type="underline" color={colors[1]} padding={0}>
+              understand
+              </RoughNotation>{" "}  before we build. We 
+              <RainbowHighlight color={colors[2]}>
+                <span className="text-white">{" "}identify
+              your goals together{" "}</span>
+              </RainbowHighlight>, then use our expertise to find that sweet
+              spot of <RainbowHighlight color={colors[1]}>
+                <span className="text-white">{" "}realistic{" "}</span>
+              </RainbowHighlight> and <RainbowHighlight color={colors[1]}>
+                <span className="text-white">{" "}impactful{" "}</span>
+              </RainbowHighlight>.
+            </h1>
+          </div>
           <div className="flex text-center justify-center items-center">
-            <h2 className="text-xl lg:text-2xl font-bold text-taran-blue py-2">
+            <h2 className="text-xl lg:text-2xl font-bold text-taran-blue py-2 mt-12 lg:mt-16">
               We are,
             </h2>
           </div>
@@ -17,7 +72,7 @@ export default function AboutHero() {
             <img className="h-16 lg:h-28 w-auto" src={logo} alt="Logo" />
           </div>
           <div className="flex flex-col lg:w-full justify-center items-center text-center mt-8">
-            <div className="text-taran-blue font-black uppercase text-xl lg:text-3xl py-2">
+            <div className="text-taran-blue font-black uppercase text-2xl lg:text-4xl py-2">
               <Typewriter
                 options={{
                   loop: true,
@@ -33,27 +88,16 @@ export default function AboutHero() {
                     .typeString("<span>Develop</span>")
                     .pauseFor(500)
                     .deleteChars(7)
+                    .typeString("<span>Automate</span>")
+                    .pauseFor(500)
+                    .deleteChars(8)
                     .start();
                 }}
               />
             </div>
-            <h2 className="text-xl lg:text-2xl font-semibold text-taran-orange">
+            {/* <h2 className="text-xl lg:text-2xl font-semibold text-taran-orange">
               Out of the Box Digital Products that suite all your Digital needs
-            </h2>
-          </div>
-          <div className="flex flex-col lg:flex-row justify-center items-center text-center mt-6">
-            <div className="lg:w-1/4"></div>
-            <div className="lg:w-1/2">
-              <h2 className="text-base lg:text-lg font-medium text-taran-blue">
-                We are a creative lab that creates bespoke digital products that
-                live on the internet. We design and develop digital products and
-                online experiences that help our clients grow, innovate, and
-                transform. We listen, learn and understand before we build. We
-                identify your goals together, then use our expertise to find
-                that sweet spot of realistic and impactful.
-              </h2>
-            </div>
-            <div className="lg:w-1/4"></div>
+            </h2> */}
           </div>
         </div>
       </div>
