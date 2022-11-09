@@ -12,9 +12,9 @@ export default function AboutCompany() {
       });
     }, []);
 return (
-  <section className="flex items-center mx-auto lg:w-11/12">
-        <div className="flex bg-gradient-to-r from-taran-orange to-taran-blue text-white mx-auto items-center justify-center mt-4 mb-16 py-6 px-4 lg:py-0 rounded-2xl shadow-2xl">
-            <div className="flex flex-col xl:flex-row p-4 lg:p-20">
+  <section className="flex items-center mx-auto">
+        <div className="flex bg-gradient-to-r from-taran-orange to-taran-blue text-white mx-auto items-center justify-center mt-4 mb-16 py-8 px-4 rounded-3xl">
+            <div className="flex flex-col xl:flex-row p-8 lg:p-20">
                 <div className="xl:w-2/3">
                     <h1 className="flex items-center justify-center">
                         <div id="team"/>
