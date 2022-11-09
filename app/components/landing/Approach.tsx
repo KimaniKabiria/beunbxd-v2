@@ -1,5 +1,6 @@
 import React from "react";
 import lottie from "lottie-web";
+import { RainbowHighlight } from "../includes/RainbowHighlight";
 
 import UiDo from "../../assets/lotties/ui-do.json";
 import DesignDo from "../../assets/lotties/design-do.json";
@@ -35,11 +36,13 @@ export default function OurApproach() {
       animationData: RPA,
     });
   }, []);
+
+  const colors = ["#fcf6f5", "#23074d", "#cc5333", "#3B82F6"];
   return (
     <section className="flex lg:w-11/12 mx-auto bg-unbxd-bg bg-opacity-70">
       <div className="flex flex-col mx-auto px-8 lg:px-36 py-8 lg:py-32">
-        <h1 className="inline-block text-taran-blue p-3 lg:text-5xl text-3xl font-bold mb-4 text-center">
-          Our Unbxing Approach.
+        <h1 className="inline-block text-unbxd-bg p-3 lg:text-5xl text-3xl font-bold mb-4 text-center">
+          <RainbowHighlight color={colors[1]}>Our Unbxing Approach.</RainbowHighlight>
         </h1>
         <div className="flex flex-col lg:flex-row mx-auto text-black mt-4 mb-12">
           <p className="lg:text-xl text-base text-center xl:text-left lg:text-left leading-relaxed font-base">
