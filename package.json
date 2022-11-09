@@ -18,6 +18,8 @@
     "@remix-run/react": "^1.7.5",
     "@remix-run/vercel": "^1.7.5",
     "@vercel/node": "^2.6.1",
+    "flowbite": "^1.5.3",
+    "flowbite-react": "^0.3.4",
     "framer-motion": "^7.6.4",
     "lord-icon-element": "^4.0.0",
     "lottie-web": "^5.9.6",
