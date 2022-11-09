@@ -184,60 +184,36 @@ export default function Nav() {
           <MenuList>
             <MenuItem>{navList}</MenuItem>
             <MenuItem>
-              <div className="lg:hidden">
-                <Menu>
-                  <MenuHandler>
-                    <Button
-                      variant="gradient"
-                      className="flex flex-row px-4 py-1 mt-4 text-sm leading-none bg-gradient-to-r from-taran-orange to-taran-blue  text-white border-2 rounded-xl hover:border-transparent hover:text-white hover:bg-taran-blue lg:mt-0"
-                    >
-                      <ChevronDownIcon
-                        className="flex -ml-1 mr-2 h-6 w-6"
-                        aria-hidden="true"
-                      />
-                      <p className="flex lg:block my-2 font-bold">
-                        LET&apos;S UNBX
-                      </p>
-                    </Button>
-                  </MenuHandler>
-                  <MenuList>
-                    <MenuItem>
-                      <div className="group inline-flex rounded-md items-center w-full text-base text-taran-blue hover:text-taran-orange">
-                        <LockOpenIcon
-                          className="flex mr-2 h-6 w-6"
-                          aria-hidden="true"
-                        />
-                        <p className="flex lg:block my-2 font-medium">
-                          Who we have unbxd.
-                        </p>
-                      </div>
-                    </MenuItem>
-                    <MenuItem>
-                      <div className="group inline-flex rounded-md items-center w-full text-base text-taran-blue hover:text-taran-orange">
-                        <InformationCircleIcon
-                          className="flex mr-2 h-6 w-6"
-                          aria-hidden="true"
-                        />
-                        <p className="flex lg:block my-2 font-medium">FAQs.</p>
-                      </div>
-                    </MenuItem>
-                    <MenuItem className="rounded-b-lg bg-gradient-to-r from-taran-blue to-taran-orange">
-                      <div className="text-white">
-                        <a href="https://clienthub.beunbxd.com/getunbxd">
-                          <div className="group flex rounded-md items-center w-full text-base ">
-                            <BriefcaseIcon
-                              className="flex mr-2 h-6 w-6"
-                              aria-hidden="true"
-                            />
-                            <p className="flex lg:block my-2 font-bold">
-                              Get a Quote.
-                            </p>
-                          </div>
-                        </a>
-                      </div>
-                    </MenuItem>
-                  </MenuList>
-                </Menu>
+              <div className="group inline-flex rounded-md items-center w-full text-sm text-taran-blue hover:text-taran-orange">
+                <LockOpenIcon
+                  className="flex mr-2 h-6 w-6"
+                  aria-hidden="true"
+                />
+                <p className="flex lg:block my-2 font-medium">
+                  Who we have unbxd.
+                </p>
+              </div>
+            </MenuItem>
+            <MenuItem>
+              <div className="group inline-flex rounded-md items-center w-full text-sm text-taran-blue hover:text-taran-orange">
+                <InformationCircleIcon
+                  className="flex mr-2 h-6 w-6"
+                  aria-hidden="true"
+                />
+                <p className="flex lg:block my-2 font-medium">FAQs.</p>
+              </div>
+            </MenuItem>
+            <MenuItem className="rounded-b-lg bg-gradient-to-r from-taran-blue to-taran-orange">
+              <div className="text-white">
+                <a href="https://clienthub.beunbxd.com/getunbxd">
+                  <div className="group flex rounded-md items-center w-full text-sm ">
+                    <BriefcaseIcon
+                      className="flex mr-2 h-6 w-6"
+                      aria-hidden="true"
+                    />
+                    <p className="flex lg:block my-2 font-bold">Get a Quote.</p>
+                  </div>
+                </a>
               </div>
             </MenuItem>
           </MenuList>
