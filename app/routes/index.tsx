@@ -8,19 +8,26 @@ import UnbxdHero from "~/components/landing/UnbxdHero";
 import ProblemIntro from "~/components/landing/ProblemIntro";
 import GetUnbxd from "~/components/landing/GetUnbxd";
 
+import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
+
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif" }} className="w-full -mt-20">
-      <UnbxdHero />
-      <div className="flex flex-col justify-center items center">
-        <ProblemIntro />
-        <GetUnbxd />
-        <Services />
-        <ProductFeatures />
-        {/* <HireUs /> */}
-        <OurApproach />
-        <CompaniesSlider />
-      </div>
+    <div
+      style={{ fontFamily: "system-ui, sans-serif" }}
+      className="w-full -mt-20"
+    >
+      <RoughNotationGroup show={true}>
+        <UnbxdHero />
+        <div className="flex flex-col justify-center items center">
+          <ProblemIntro />
+          <GetUnbxd />
+          <Services />
+          <ProductFeatures />
+          {/* <HireUs /> */}
+          <OurApproach />
+          <CompaniesSlider />
+        </div>
+      </RoughNotationGroup>
     </div>
   );
 }
