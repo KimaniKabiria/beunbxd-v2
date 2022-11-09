@@ -1,6 +1,6 @@
 import Hero from "~/components/landing/Hero";
 import Services from "~/components/landing/Services";
-import HireUs from "~/components/landing/HireUs";
+import HireUs from "~/components/about/HireUs";
 import OurApproach from "~/components/landing/Approach";
 import ProductFeatures from "~/components/landing/ProductFeatures";
 import CompaniesSlider from "~/components/landing/CompaniesSlider";

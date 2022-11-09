@@ -12,7 +12,7 @@ export default function AboutHero() {
     <section className="w-full lg:py-12 lg:mb-12">
       <div className="container mx-auto px-8 lg:flex p-20 lg:p-0 lg:pb-20">
         <div className="flex justify-center items-center w-full flex-col">
-          <div className="lg:w-9/12 justify-center items-center lg:py-20 py-12 text-taran-blue text-3xl lg:text-5xl text-center">
+          <div className="lg:w-9/12 justify-center items-center lg:py-20 py-12 text-taran-blue text-3xl lg:text-5xl text-center font-medium">
             <h1>
               We are a creative lab that creates{" "}
               <RainbowHighlight color={colors[2]}>
@@ -23,33 +23,33 @@ export default function AboutHero() {
                 <span className="text-white">live on the internet</span>
               </RainbowHighlight>{" "}
               . We{" "}
-              <RoughNotation type="underline" color={colors[2]} padding={0}>
+              <RoughNotation type="underline" color={colors[2]} padding={0} iterations={3}>
                 design
               </RoughNotation>{" "}
               and{" "}
-              <RoughNotation type="underline" color={colors[2]} padding={0}>
+              <RoughNotation type="underline" color={colors[2]} padding={0} iterations={3}>
                 develop
               </RoughNotation>{" "}
               digital products and online experiences that help our clients{" "}
-              <RoughNotation type="circle" color={colors[2]} padding={2}>
+              <RoughNotation type="circle" color={colors[2]} padding={2} iterations={3}>
                 grow
               </RoughNotation>{" "}
               ,{" "}
-              <RoughNotation type="circle" color={colors[1]} padding={2}>
+              <RoughNotation type="circle" color={colors[1]} padding={2} iterations={3}>
                 innovate
               </RoughNotation>{" "}
               , and{" "}
-              <RoughNotation type="circle" color={colors[2]} padding={2}>
+              <RoughNotation type="circle" color={colors[2]} padding={2} iterations={3}>
                 transform
               </RoughNotation>{" "}
               . We {" "}
-              <RoughNotation type="underline" color={colors[1]} padding={0}>
+              <RoughNotation type="underline" color={colors[1]} padding={0} iterations={3}>
               listen
               </RoughNotation>{" "}, {" "}
-              <RoughNotation type="underline" color={colors[1]} padding={0}>
+              <RoughNotation type="underline" color={colors[1]} padding={0} iterations={3}>
               learn
               </RoughNotation>{" "} and {" "}
-              <RoughNotation type="underline" color={colors[1]} padding={0}>
+              <RoughNotation type="underline" color={colors[1]} padding={0} iterations={3}>
               understand
               </RoughNotation>{" "}  before we build. We 
               <RainbowHighlight color={colors[2]}>
