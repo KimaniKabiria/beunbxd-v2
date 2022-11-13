@@ -1,5 +1,5 @@
 import DesignHero from "~/components/design/DesignHero";
-import WhatIsUiUx from "~/components/design/WhatIsUiUX";
+import WhatWeDesign from "~/components/design/WhatWeDesign";
 import DesignProcess from "~/components/design/DesignProcess";
 
 export default function DesignIndex() {
@@ -13,9 +13,13 @@ export default function DesignIndex() {
         </div>
       </section>
 
+<<<<<<< Updated upstream
       <WhatIsUiUx />
       
       <DesignProcess />
+=======
+        <WhatWeDesign />
+>>>>>>> Stashed changes
 
     </div>
   );
