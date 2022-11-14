@@ -1,5 +1,5 @@
 import DesignHero from "~/components/design/DesignHero";
-import WhatIsUiUx from "~/components/design/WhatIsUiUX";
+import WhatWeDesign from "~/components/design/WhatWeDesign";
 import DesignProcess from "~/components/design/DesignProcess";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 
@@ -44,10 +44,10 @@ export default function DesignIndex() {
           </div>
         </section>
 
-        <WhatIsUiUx />
+      <WhatIsUiUx />
+      
+      <DesignProcess />
 
-        <DesignProcess />
-      </RoughNotationGroup>
     </div>
   );
 }
