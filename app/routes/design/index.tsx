@@ -1,6 +1,7 @@
 import DesignHero from "~/components/design/DesignHero";
 import WhatWeDesign from "~/components/design/WhatWeDesign";
 import DesignProcess from "~/components/design/DesignProcess";
+import DesignTools from "~/components/design/DesignTools";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 
 export default function DesignIndex() {
@@ -47,6 +48,9 @@ export default function DesignIndex() {
         <WhatWeDesign />
 
         <DesignProcess />
+
+        <DesignTools />
+        
       </RoughNotationGroup>
     </div>
   );
