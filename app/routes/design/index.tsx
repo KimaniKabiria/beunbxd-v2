@@ -44,10 +44,10 @@ export default function DesignIndex() {
           </div>
         </section>
 
-      <WhatIsUiUx />
-      
-      <DesignProcess />
+        <WhatWeDesign />
 
+        <DesignProcess />
+      </RoughNotationGroup>
     </div>
   );
 }
